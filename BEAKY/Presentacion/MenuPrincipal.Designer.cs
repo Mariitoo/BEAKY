@@ -42,9 +42,10 @@
             // 
             // panel2
             // 
-            this.panel2.Location = new System.Drawing.Point(383, 28);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(196, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(174, 295);
+            this.panel2.Size = new System.Drawing.Size(719, 575);
             this.panel2.TabIndex = 1;
             // 
             // MenuPrincipal
