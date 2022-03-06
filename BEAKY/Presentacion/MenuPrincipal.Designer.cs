@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.btnConsulta = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,13 +45,15 @@
             this.panel1.Size = new System.Drawing.Size(196, 575);
             this.panel1.TabIndex = 0;
             // 
-            // panel2
+            // btnConsulta
             // 
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(196, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(719, 575);
-            this.panel2.TabIndex = 1;
+            this.btnConsulta.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnConsulta.Location = new System.Drawing.Point(0, 68);
+            this.btnConsulta.Name = "btnConsulta";
+            this.btnConsulta.Size = new System.Drawing.Size(196, 125);
+            this.btnConsulta.TabIndex = 1;
+            this.btnConsulta.Text = "Consultar Reseta";
+            this.btnConsulta.UseVisualStyleBackColor = true;
             // 
             // panel3
             // 
@@ -61,15 +63,13 @@
             this.panel3.Size = new System.Drawing.Size(196, 68);
             this.panel3.TabIndex = 0;
             // 
-            // btnConsulta
+            // panel2
             // 
-            this.btnConsulta.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnConsulta.Location = new System.Drawing.Point(0, 68);
-            this.btnConsulta.Name = "btnConsulta";
-            this.btnConsulta.Size = new System.Drawing.Size(196, 102);
-            this.btnConsulta.TabIndex = 1;
-            this.btnConsulta.Text = "Consultar Reseta";
-            this.btnConsulta.UseVisualStyleBackColor = true;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(196, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(719, 575);
+            this.panel2.TabIndex = 1;
             // 
             // MenuPrincipal
             // 
