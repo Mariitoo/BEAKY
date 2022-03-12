@@ -32,11 +32,13 @@
             this.btnConsulta = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnUsuario = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnUsuario);
             this.panel1.Controls.Add(this.btnConsulta);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -47,20 +49,23 @@
             // 
             // btnConsulta
             // 
+            this.btnConsulta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.btnConsulta.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnConsulta.Location = new System.Drawing.Point(0, 68);
+            this.btnConsulta.FlatAppearance.BorderSize = 0;
+            this.btnConsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConsulta.Location = new System.Drawing.Point(0, 90);
             this.btnConsulta.Name = "btnConsulta";
-            this.btnConsulta.Size = new System.Drawing.Size(196, 125);
+            this.btnConsulta.Size = new System.Drawing.Size(196, 89);
             this.btnConsulta.TabIndex = 1;
             this.btnConsulta.Text = "Consultar Reseta";
-            this.btnConsulta.UseVisualStyleBackColor = true;
+            this.btnConsulta.UseVisualStyleBackColor = false;
             // 
             // panel3
             // 
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(196, 68);
+            this.panel3.Size = new System.Drawing.Size(196, 90);
             this.panel3.TabIndex = 0;
             // 
             // panel2
@@ -70,6 +75,19 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(719, 575);
             this.panel2.TabIndex = 1;
+            // 
+            // btnUsuario
+            // 
+            this.btnUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.btnUsuario.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnUsuario.FlatAppearance.BorderSize = 0;
+            this.btnUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUsuario.Location = new System.Drawing.Point(0, 179);
+            this.btnUsuario.Name = "btnUsuario";
+            this.btnUsuario.Size = new System.Drawing.Size(196, 89);
+            this.btnUsuario.TabIndex = 2;
+            this.btnUsuario.Text = "Usuarios";
+            this.btnUsuario.UseVisualStyleBackColor = false;
             // 
             // MenuPrincipal
             // 
@@ -91,5 +109,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnConsulta;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button btnUsuario;
     }
 }
