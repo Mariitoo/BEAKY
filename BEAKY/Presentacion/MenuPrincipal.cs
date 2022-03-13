@@ -16,5 +16,20 @@ namespace BEAKY.Presentacion
         {
             InitializeComponent();
         }
+
+        private void MenuPrincipal_Load(object sender, EventArgs e)
+        {
+            panelBienveni.Dock = DockStyle.Fill;
+        }
+
+        private void panel25_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnConsultar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
