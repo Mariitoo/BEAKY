@@ -29,7 +29,10 @@ namespace BEAKY.Presentacion
 
         private void btnConsultar_Click(object sender, EventArgs e)
         {
-
+            //PruebasControl Control = new PruebasControl();
+            //panelMuestra.Controls.Clear();
+            //Control.Dock = DockStyle.Fill;
+            //panelMuestra.Controls.Add(Control);
         }
     }
 }

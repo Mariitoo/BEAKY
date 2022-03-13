@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.panel23 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelMuestra = new System.Windows.Forms.Panel();
             this.panelBienveni = new System.Windows.Forms.Panel();
             this.bienvenida = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -53,22 +53,22 @@
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.btnUsuarios = new System.Windows.Forms.Button();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.btnReceta = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel24 = new System.Windows.Forms.Panel();
             this.panel25 = new System.Windows.Forms.Panel();
             this.lblNombre = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelBienvenida = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnUsuarios = new System.Windows.Forms.Button();
+            this.btnReceta = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel23.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.panelMuestra.SuspendLayout();
             this.panelBienveni.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -79,14 +79,14 @@
             this.panel8.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel25.SuspendLayout();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel23
             // 
-            this.panel23.Controls.Add(this.panel1);
+            this.panel23.Controls.Add(this.panelMuestra);
             this.panel23.Controls.Add(this.panel4);
             this.panel23.Controls.Add(this.panelBienvenida);
             this.panel23.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -95,15 +95,15 @@
             this.panel23.Size = new System.Drawing.Size(1186, 575);
             this.panel23.TabIndex = 0;
             // 
-            // panel1
+            // panelMuestra
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.panel1.Controls.Add(this.panelBienveni);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(165, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1021, 575);
-            this.panel1.TabIndex = 3;
+            this.panelMuestra.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panelMuestra.Controls.Add(this.panelBienveni);
+            this.panelMuestra.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMuestra.Location = new System.Drawing.Point(165, 0);
+            this.panelMuestra.Name = "panelMuestra";
+            this.panelMuestra.Size = new System.Drawing.Size(1021, 575);
+            this.panelMuestra.TabIndex = 3;
             // 
             // panelBienveni
             // 
@@ -366,24 +366,6 @@
             this.panel8.Size = new System.Drawing.Size(165, 65);
             this.panel8.TabIndex = 1;
             // 
-            // btnUsuarios
-            // 
-            this.btnUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
-            this.btnUsuarios.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnUsuarios.FlatAppearance.BorderSize = 0;
-            this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUsuarios.ForeColor = System.Drawing.Color.White;
-            this.btnUsuarios.Image = global::BEAKY.Properties.Resources.usuario_de_perfil;
-            this.btnUsuarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUsuarios.Location = new System.Drawing.Point(10, 10);
-            this.btnUsuarios.Name = "btnUsuarios";
-            this.btnUsuarios.Size = new System.Drawing.Size(155, 55);
-            this.btnUsuarios.TabIndex = 3;
-            this.btnUsuarios.Text = "Usuarios";
-            this.btnUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnUsuarios.UseVisualStyleBackColor = false;
-            // 
             // panel9
             // 
             this.panel9.Dock = System.Windows.Forms.DockStyle.Left;
@@ -419,24 +401,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(155, 10);
             this.panel3.TabIndex = 4;
-            // 
-            // btnReceta
-            // 
-            this.btnReceta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
-            this.btnReceta.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnReceta.FlatAppearance.BorderSize = 0;
-            this.btnReceta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReceta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReceta.ForeColor = System.Drawing.Color.White;
-            this.btnReceta.Image = global::BEAKY.Properties.Resources.libro_de_cocina;
-            this.btnReceta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReceta.Location = new System.Drawing.Point(10, 10);
-            this.btnReceta.Name = "btnReceta";
-            this.btnReceta.Size = new System.Drawing.Size(155, 55);
-            this.btnReceta.TabIndex = 3;
-            this.btnReceta.Text = "Receta";
-            this.btnReceta.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnReceta.UseVisualStyleBackColor = false;
             // 
             // panel7
             // 
@@ -477,24 +441,6 @@
             this.lblNombre.TabIndex = 2;
             this.lblNombre.Text = "BEAKY";
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox3.Location = new System.Drawing.Point(33, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(33, 54);
-            this.pictureBox3.TabIndex = 1;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(33, 54);
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
             // panelBienvenida
             // 
             this.panelBienvenida.Font = new System.Drawing.Font("Microsoft Sans Serif", 80F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -516,6 +462,60 @@
             this.panel2.Size = new System.Drawing.Size(1186, 575);
             this.panel2.TabIndex = 1;
             // 
+            // btnUsuarios
+            // 
+            this.btnUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
+            this.btnUsuarios.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnUsuarios.FlatAppearance.BorderSize = 0;
+            this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUsuarios.ForeColor = System.Drawing.Color.White;
+            this.btnUsuarios.Image = global::BEAKY.Properties.Resources.usuario_de_perfil;
+            this.btnUsuarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUsuarios.Location = new System.Drawing.Point(10, 10);
+            this.btnUsuarios.Name = "btnUsuarios";
+            this.btnUsuarios.Size = new System.Drawing.Size(155, 55);
+            this.btnUsuarios.TabIndex = 3;
+            this.btnUsuarios.Text = "Usuarios";
+            this.btnUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnUsuarios.UseVisualStyleBackColor = false;
+            // 
+            // btnReceta
+            // 
+            this.btnReceta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
+            this.btnReceta.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnReceta.FlatAppearance.BorderSize = 0;
+            this.btnReceta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReceta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReceta.ForeColor = System.Drawing.Color.White;
+            this.btnReceta.Image = global::BEAKY.Properties.Resources.libro_de_cocina;
+            this.btnReceta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReceta.Location = new System.Drawing.Point(10, 10);
+            this.btnReceta.Name = "btnReceta";
+            this.btnReceta.Size = new System.Drawing.Size(155, 55);
+            this.btnReceta.TabIndex = 3;
+            this.btnReceta.Text = "Receta";
+            this.btnReceta.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnReceta.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox3.Location = new System.Drawing.Point(33, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(33, 54);
+            this.pictureBox3.TabIndex = 1;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(33, 54);
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -528,7 +528,7 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MenuPrincipal_Load);
             this.panel23.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
+            this.panelMuestra.ResumeLayout(false);
             this.panelBienveni.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
@@ -540,9 +540,9 @@
             this.panel6.ResumeLayout(false);
             this.panel25.ResumeLayout(false);
             this.panel25.PerformLayout();
+            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -552,7 +552,7 @@
         private System.Windows.Forms.Panel panel23;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label panelBienvenida;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelMuestra;
         private System.Windows.Forms.Panel panelBienveni;
         private System.Windows.Forms.Label bienvenida;
         private System.Windows.Forms.Panel panel4;
