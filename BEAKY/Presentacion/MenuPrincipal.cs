@@ -34,5 +34,14 @@ namespace BEAKY.Presentacion
             //Control.Dock = DockStyle.Fill;
             //panelMuestra.Controls.Add(Control);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SubirReceta Control = new SubirReceta();
+            panelMuestra.Controls.Clear();
+            Control.Dock = DockStyle.Fill;
+            panelMuestra.Controls.Add(Control);
+
+        }
     }
 }
