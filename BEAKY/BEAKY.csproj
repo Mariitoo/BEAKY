@@ -52,6 +52,7 @@
     <Compile Include="Presentacion\MenuPrincipal.Designer.cs">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentacion\PlaceHold.cs" />
     <Compile Include="Presentacion\SubirReceta.cs">
       <SubType>UserControl</SubType>
     </Compile>
