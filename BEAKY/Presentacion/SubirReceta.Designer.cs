@@ -145,13 +145,14 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.LightCoral;
             this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Location = new System.Drawing.Point(363, 51);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(178, 57);
             this.button1.TabIndex = 6;
             this.button1.Text = "Insertar ingrediente";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // lblIngrediente
             // 
