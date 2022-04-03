@@ -33,6 +33,7 @@
             this.panelBienveni = new System.Windows.Forms.Panel();
             this.bienvenida = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel17 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -60,7 +61,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelBienvenida = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel23.SuspendLayout();
             this.panelMuestra.SuspendLayout();
             this.panelBienveni.SuspendLayout();
@@ -115,7 +115,7 @@
             this.bienvenida.Name = "bienvenida";
             this.bienvenida.Size = new System.Drawing.Size(528, 317);
             this.bienvenida.TabIndex = 0;
-            this.bienvenida.Text = "Bienvenido a Beaky";
+            this.bienvenida.Text = "Bienvenido a Beaky, tú sistema de recetas";
             this.bienvenida.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel4
@@ -129,6 +129,22 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(165, 575);
             this.panel4.TabIndex = 2;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(0, 54);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(165, 154);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Subir una Receta";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel5
             // 
@@ -438,22 +454,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1186, 575);
             this.panel2.TabIndex = 1;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(0, 54);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(165, 154);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Subir una Receta";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // MenuPrincipal
             // 
