@@ -37,7 +37,6 @@
             this.txtNomRec = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.lblIngrediente = new System.Windows.Forms.Label();
             this.txtIngre = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
@@ -126,7 +125,6 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Black;
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.lblIngrediente);
             this.panel2.Controls.Add(this.txtIngre);
             this.panel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -142,17 +140,6 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(199, 2);
             this.label1.TabIndex = 5;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.LightCoral;
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(363, 51);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(178, 57);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Insertar ingrediente";
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // lblIngrediente
             // 
@@ -212,7 +199,6 @@
         private System.Windows.Forms.TextBox txtIDesc;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label lblIngrediente;
         private System.Windows.Forms.TextBox txtIngre;
     }
