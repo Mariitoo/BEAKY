@@ -71,7 +71,7 @@
             this.lblSubRec.BackColor = System.Drawing.Color.Transparent;
             this.lblSubRec.Font = new System.Drawing.Font("Magneto", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSubRec.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblSubRec.Location = new System.Drawing.Point(347, 11);
+            this.lblSubRec.Location = new System.Drawing.Point(323, 9);
             this.lblSubRec.Name = "lblSubRec";
             this.lblSubRec.Size = new System.Drawing.Size(313, 24);
             this.lblSubRec.TabIndex = 0;
