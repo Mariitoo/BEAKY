@@ -50,5 +50,30 @@ namespace BEAKY.Presentacion
         {
             PlaceHold.Leave("Platica un poco sobre tu receta", txtIDesc);
         }
+
+        private void lblSubRec_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtIngre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

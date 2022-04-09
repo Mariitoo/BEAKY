@@ -28,25 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SubirReceta));
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblSubRec = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panelinfoRece = new System.Windows.Forms.Panel();
             this.txtIDesc = new System.Windows.Forms.TextBox();
             this.lblBarraAzul = new System.Windows.Forms.Label();
             this.txtNomRec = new System.Windows.Forms.TextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblIngrediente = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.txtIngre = new System.Windows.Forms.TextBox();
+            this.lblIngrediente = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panelinfoRece.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.panel1.Controls.Add(this.lblSubRec);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -59,61 +71,57 @@
             this.lblSubRec.BackColor = System.Drawing.Color.Transparent;
             this.lblSubRec.Font = new System.Drawing.Font("Magneto", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSubRec.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblSubRec.Location = new System.Drawing.Point(217, 9);
+            this.lblSubRec.Location = new System.Drawing.Point(347, 11);
             this.lblSubRec.Name = "lblSubRec";
-            this.lblSubRec.Size = new System.Drawing.Size(281, 24);
+            this.lblSubRec.Size = new System.Drawing.Size(313, 24);
             this.lblSubRec.TabIndex = 0;
-            this.lblSubRec.Text = "COMPARTE TU RECETA";
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(83, 418);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 100);
-            this.flowLayoutPanel1.TabIndex = 4;
+            this.lblSubRec.Text = "! COMPARTE TU RECETA !";
+            this.lblSubRec.Click += new System.EventHandler(this.lblSubRec_Click);
             // 
             // panelinfoRece
             // 
-            this.panelinfoRece.BackColor = System.Drawing.Color.Black;
+            this.panelinfoRece.BackColor = System.Drawing.Color.White;
+            this.panelinfoRece.Controls.Add(this.textBox1);
+            this.panelinfoRece.Controls.Add(this.pictureBox1);
             this.panelinfoRece.Controls.Add(this.txtIDesc);
             this.panelinfoRece.Controls.Add(this.lblBarraAzul);
             this.panelinfoRece.Controls.Add(this.txtNomRec);
             this.panelinfoRece.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.panelinfoRece.Location = new System.Drawing.Point(0, 55);
             this.panelinfoRece.Name = "panelinfoRece";
-            this.panelinfoRece.Size = new System.Drawing.Size(958, 193);
+            this.panelinfoRece.Size = new System.Drawing.Size(958, 206);
             this.panelinfoRece.TabIndex = 5;
             // 
             // txtIDesc
             // 
-            this.txtIDesc.BackColor = System.Drawing.Color.Black;
-            this.txtIDesc.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtIDesc.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtIDesc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtIDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIDesc.ForeColor = System.Drawing.Color.Gray;
-            this.txtIDesc.Location = new System.Drawing.Point(437, 75);
+            this.txtIDesc.ForeColor = System.Drawing.Color.Black;
+            this.txtIDesc.Location = new System.Drawing.Point(314, 55);
             this.txtIDesc.Multiline = true;
             this.txtIDesc.Name = "txtIDesc";
-            this.txtIDesc.Size = new System.Drawing.Size(200, 91);
+            this.txtIDesc.Size = new System.Drawing.Size(278, 136);
             this.txtIDesc.TabIndex = 4;
-            this.txtIDesc.Text = "Platica un poco sobre tu receta";
+            this.txtIDesc.Text = "  Platica un poco sobre tu receta...";
             this.txtIDesc.Enter += new System.EventHandler(this.txtIDesc_Enter);
             this.txtIDesc.Leave += new System.EventHandler(this.txtIDesc_Leave);
             // 
             // lblBarraAzul
             // 
             this.lblBarraAzul.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.lblBarraAzul.Location = new System.Drawing.Point(180, 48);
+            this.lblBarraAzul.Location = new System.Drawing.Point(22, 164);
             this.lblBarraAzul.Name = "lblBarraAzul";
             this.lblBarraAzul.Size = new System.Drawing.Size(199, 2);
             this.lblBarraAzul.TabIndex = 3;
             // 
             // txtNomRec
             // 
-            this.txtNomRec.BackColor = System.Drawing.Color.Black;
+            this.txtNomRec.BackColor = System.Drawing.Color.White;
             this.txtNomRec.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNomRec.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNomRec.ForeColor = System.Drawing.SystemColors.Info;
-            this.txtNomRec.Location = new System.Drawing.Point(179, 31);
+            this.txtNomRec.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.txtNomRec.Location = new System.Drawing.Point(31, 144);
             this.txtNomRec.Name = "txtNomRec";
             this.txtNomRec.Size = new System.Drawing.Size(190, 17);
             this.txtNomRec.TabIndex = 1;
@@ -121,50 +129,177 @@
             this.txtNomRec.Enter += new System.EventHandler(this.txtNomRec_Enter);
             this.txtNomRec.Leave += new System.EventHandler(this.txtNomRec_Leave);
             // 
-            // panel2
+            // pictureBox1
             // 
-            this.panel2.BackColor = System.Drawing.Color.Black;
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.lblIngrediente);
-            this.panel2.Controls.Add(this.txtIngre);
-            this.panel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel2.Location = new System.Drawing.Point(0, 254);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(958, 193);
-            this.panel2.TabIndex = 6;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(52, 42);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(107, 87);
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
             // 
-            // label1
+            // textBox1
             // 
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label1.Location = new System.Drawing.Point(58, 73);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(199, 2);
-            this.label1.TabIndex = 5;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Font = new System.Drawing.Font("Perpetua Titling MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.textBox1.Location = new System.Drawing.Point(299, 13);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(315, 26);
+            this.textBox1.TabIndex = 6;
+            this.textBox1.Text = "  Escribe el Titulo de la receta...";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // txtIngre
+            // 
+            this.txtIngre.BackColor = System.Drawing.Color.White;
+            this.txtIngre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtIngre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIngre.ForeColor = System.Drawing.Color.Black;
+            this.txtIngre.Location = new System.Drawing.Point(15, 93);
+            this.txtIngre.Multiline = true;
+            this.txtIngre.Name = "txtIngre";
+            this.txtIngre.Size = new System.Drawing.Size(206, 95);
+            this.txtIngre.TabIndex = 4;
+            this.txtIngre.Text = "Escribe los ingredientes a utilizar: ";
+            this.txtIngre.TextChanged += new System.EventHandler(this.txtIngre_TextChanged);
+            this.txtIngre.Enter += new System.EventHandler(this.txtIngre_Enter);
+            this.txtIngre.Leave += new System.EventHandler(this.txtIngre_Leave);
             // 
             // lblIngrediente
             // 
             this.lblIngrediente.AutoSize = true;
-            this.lblIngrediente.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIngrediente.Location = new System.Drawing.Point(57, 15);
+            this.lblIngrediente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblIngrediente.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIngrediente.ForeColor = System.Drawing.Color.Black;
+            this.lblIngrediente.Location = new System.Drawing.Point(62, 47);
             this.lblIngrediente.Name = "lblIngrediente";
-            this.lblIngrediente.Size = new System.Drawing.Size(114, 24);
+            this.lblIngrediente.Size = new System.Drawing.Size(97, 24);
             this.lblIngrediente.TabIndex = 5;
             this.lblIngrediente.Text = "Ingredientes";
             // 
-            // txtIngre
+            // label1
             // 
-            this.txtIngre.BackColor = System.Drawing.Color.Black;
-            this.txtIngre.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtIngre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIngre.ForeColor = System.Drawing.Color.White;
-            this.txtIngre.Location = new System.Drawing.Point(61, 51);
-            this.txtIngre.Multiline = true;
-            this.txtIngre.Name = "txtIngre";
-            this.txtIngre.Size = new System.Drawing.Size(204, 24);
-            this.txtIngre.TabIndex = 4;
-            this.txtIngre.Text = "Escribe los ingredientes a utilizar";
-            this.txtIngre.Enter += new System.EventHandler(this.txtIngre_Enter);
-            this.txtIngre.Leave += new System.EventHandler(this.txtIngre_Leave);
+            this.label1.AutoSize = true;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(246, 49);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(94, 24);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Preparación";
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.Color.White;
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.ForeColor = System.Drawing.Color.Black;
+            this.textBox2.Location = new System.Drawing.Point(258, 93);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(218, 95);
+            this.textBox2.TabIndex = 7;
+            this.textBox2.Text = "Escribe el proceso de elaboración: ";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(443, 57);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(56, 20);
+            this.textBox3.TabIndex = 8;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            // 
+            // textBox4
+            // 
+            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox4.Location = new System.Drawing.Point(413, 60);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(24, 13);
+            this.textBox4.TabIndex = 9;
+            this.textBox4.Text = "min";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.textBox6);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.textBox5);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Controls.Add(this.textBox4);
+            this.panel2.Controls.Add(this.textBox3);
+            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.lblIngrediente);
+            this.panel2.Controls.Add(this.txtIngre);
+            this.panel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panel2.Location = new System.Drawing.Point(0, 279);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(958, 280);
+            this.panel2.TabIndex = 6;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
+            this.pictureBox2.Location = new System.Drawing.Point(371, 40);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(36, 33);
+            this.pictureBox2.TabIndex = 10;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(555, 49);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(105, 22);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Presentación";
+            // 
+            // textBox5
+            // 
+            this.textBox5.BackColor = System.Drawing.Color.White;
+            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.ForeColor = System.Drawing.Color.Black;
+            this.textBox5.Location = new System.Drawing.Point(524, 93);
+            this.textBox5.Multiline = true;
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(198, 95);
+            this.textBox5.TabIndex = 12;
+            this.textBox5.Text = "  Escribe una recomendación: ";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(813, 49);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(41, 22);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Tips";
+            // 
+            // textBox6
+            // 
+            this.textBox6.BackColor = System.Drawing.Color.White;
+            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox6.ForeColor = System.Drawing.Color.Black;
+            this.textBox6.Location = new System.Drawing.Point(742, 93);
+            this.textBox6.Multiline = true;
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(198, 95);
+            this.textBox6.TabIndex = 14;
+            this.textBox6.Text = "  Escribe una recomendación: ";
             // 
             // SubirReceta
             // 
@@ -173,7 +308,6 @@
             this.BackColor = System.Drawing.Color.Gray;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelinfoRece);
-            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Name = "SubirReceta";
@@ -182,8 +316,10 @@
             this.panel1.PerformLayout();
             this.panelinfoRece.ResumeLayout(false);
             this.panelinfoRece.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -192,14 +328,23 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblSubRec;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel panelinfoRece;
         private System.Windows.Forms.Label lblBarraAzul;
         private System.Windows.Forms.TextBox txtNomRec;
         private System.Windows.Forms.TextBox txtIDesc;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lblIngrediente;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox txtIngre;
+        private System.Windows.Forms.Label lblIngrediente;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label2;
     }
 }
