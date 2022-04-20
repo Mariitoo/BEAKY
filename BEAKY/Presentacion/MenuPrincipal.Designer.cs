@@ -45,7 +45,6 @@
             this.panel15 = new System.Windows.Forms.Panel();
             this.panel16 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.btnRestaurar = new System.Windows.Forms.Button();
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
@@ -63,6 +62,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelBienvenida = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnRestaurar = new System.Windows.Forms.Button();
             this.panel23.SuspendLayout();
             this.panelMuestra.SuspendLayout();
             this.panelBienveni.SuspendLayout();
@@ -135,7 +135,7 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.panel4.BackColor = System.Drawing.Color.MistyRose;
             this.panel4.Controls.Add(this.button1);
             this.panel4.Controls.Add(this.panel5);
             this.panel4.Controls.Add(this.panel25);
@@ -155,7 +155,7 @@
             this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Location = new System.Drawing.Point(0, 54);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(165, 154);
+            this.button1.Size = new System.Drawing.Size(165, 109);
             this.button1.TabIndex = 6;
             this.button1.Text = "Subir una Receta";
             this.button1.UseVisualStyleBackColor = false;
@@ -263,23 +263,6 @@
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(165, 65);
             this.panel11.TabIndex = 2;
-            // 
-            // btnRestaurar
-            // 
-            this.btnRestaurar.BackColor = System.Drawing.Color.MistyRose;
-            this.btnRestaurar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnRestaurar.FlatAppearance.BorderSize = 0;
-            this.btnRestaurar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRestaurar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRestaurar.ForeColor = System.Drawing.Color.Black;
-            this.btnRestaurar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRestaurar.Location = new System.Drawing.Point(10, 10);
-            this.btnRestaurar.Name = "btnRestaurar";
-            this.btnRestaurar.Size = new System.Drawing.Size(155, 55);
-            this.btnRestaurar.TabIndex = 3;
-            this.btnRestaurar.Text = "Restaurar Bd";
-            this.btnRestaurar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnRestaurar.UseVisualStyleBackColor = false;
             // 
             // panel12
             // 
@@ -470,6 +453,23 @@
             this.panel2.Size = new System.Drawing.Size(1186, 575);
             this.panel2.TabIndex = 1;
             // 
+            // btnRestaurar
+            // 
+            this.btnRestaurar.BackColor = System.Drawing.Color.MistyRose;
+            this.btnRestaurar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnRestaurar.FlatAppearance.BorderSize = 0;
+            this.btnRestaurar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRestaurar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRestaurar.ForeColor = System.Drawing.Color.Black;
+            this.btnRestaurar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRestaurar.Location = new System.Drawing.Point(10, 10);
+            this.btnRestaurar.Name = "btnRestaurar";
+            this.btnRestaurar.Size = new System.Drawing.Size(155, 55);
+            this.btnRestaurar.TabIndex = 3;
+            this.btnRestaurar.Text = "Restaurar Bd";
+            this.btnRestaurar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnRestaurar.UseVisualStyleBackColor = false;
+            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -519,7 +519,6 @@
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Button btnRestaurar;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Panel panel8;
@@ -539,5 +538,6 @@
         private System.Windows.Forms.Panel panelBienveni;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label lblSubRec;
+        private System.Windows.Forms.Button btnRestaurar;
     }
 }

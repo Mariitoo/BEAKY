@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SubirReceta));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.lblSubRec = new System.Windows.Forms.Label();
             this.panelinfoRece = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -40,25 +42,21 @@
             this.txtIngre = new System.Windows.Forms.TextBox();
             this.lblIngrediente = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtPrepara = new System.Windows.Forms.TextBox();
+            this.txtTiempo = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.btnSubir = new System.Windows.Forms.Button();
+            this.txtTips = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panelinfoRece.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -71,6 +69,24 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(958, 49);
             this.panel1.TabIndex = 0;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
+            this.pictureBox4.Location = new System.Drawing.Point(888, 0);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(52, 43);
+            this.pictureBox4.TabIndex = 2;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
+            this.pictureBox3.Location = new System.Drawing.Point(15, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(52, 43);
+            this.pictureBox3.TabIndex = 1;
+            this.pictureBox3.TabStop = false;
             // 
             // lblSubRec
             // 
@@ -198,26 +214,26 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Preparación";
             // 
-            // textBox2
+            // txtPrepara
             // 
-            this.textBox2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.Black;
-            this.textBox2.Location = new System.Drawing.Point(246, 51);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(253, 186);
-            this.textBox2.TabIndex = 7;
-            this.textBox2.Text = "Escribe el proceso de elaboración: ";
+            this.txtPrepara.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtPrepara.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPrepara.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrepara.ForeColor = System.Drawing.Color.Black;
+            this.txtPrepara.Location = new System.Drawing.Point(246, 51);
+            this.txtPrepara.Multiline = true;
+            this.txtPrepara.Name = "txtPrepara";
+            this.txtPrepara.Size = new System.Drawing.Size(253, 186);
+            this.txtPrepara.TabIndex = 7;
+            this.txtPrepara.Text = "Escribe el proceso de elaboración: ";
             // 
-            // textBox3
+            // txtTiempo
             // 
-            this.textBox3.Location = new System.Drawing.Point(428, 16);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(71, 20);
-            this.textBox3.TabIndex = 8;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.txtTiempo.Location = new System.Drawing.Point(428, 16);
+            this.txtTiempo.Name = "txtTiempo";
+            this.txtTiempo.Size = new System.Drawing.Size(71, 20);
+            this.txtTiempo.TabIndex = 8;
+            this.txtTiempo.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // textBox4
             // 
@@ -231,15 +247,13 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.textBox6);
+            this.panel2.Controls.Add(this.btnSubir);
+            this.panel2.Controls.Add(this.txtTips);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.textBox5);
-            this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.textBox4);
-            this.panel2.Controls.Add(this.textBox3);
-            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.txtTiempo);
+            this.panel2.Controls.Add(this.txtPrepara);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.lblIngrediente);
             this.panel2.Controls.Add(this.txtIngre);
@@ -250,18 +264,31 @@
             this.panel2.TabIndex = 6;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // textBox6
+            // btnSubir
             // 
-            this.textBox6.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.ForeColor = System.Drawing.Color.Black;
-            this.textBox6.Location = new System.Drawing.Point(742, 51);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(198, 186);
-            this.textBox6.TabIndex = 14;
-            this.textBox6.Text = "  Escribe una recomendación: ";
+            this.btnSubir.BackColor = System.Drawing.Color.MistyRose;
+            this.btnSubir.Font = new System.Drawing.Font("Myanmar Text", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSubir.ForeColor = System.Drawing.Color.Black;
+            this.btnSubir.Location = new System.Drawing.Point(398, 262);
+            this.btnSubir.Name = "btnSubir";
+            this.btnSubir.Size = new System.Drawing.Size(112, 33);
+            this.btnSubir.TabIndex = 15;
+            this.btnSubir.Text = "Subir receta";
+            this.btnSubir.UseVisualStyleBackColor = false;
+            this.btnSubir.Click += new System.EventHandler(this.btnSubir_Click);
+            // 
+            // txtTips
+            // 
+            this.txtTips.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtTips.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtTips.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTips.ForeColor = System.Drawing.Color.Black;
+            this.txtTips.Location = new System.Drawing.Point(539, 51);
+            this.txtTips.Multiline = true;
+            this.txtTips.Name = "txtTips";
+            this.txtTips.Size = new System.Drawing.Size(198, 186);
+            this.txtTips.TabIndex = 14;
+            this.txtTips.Text = "  Escribe una recomendación: ";
             // 
             // label3
             // 
@@ -269,36 +296,11 @@
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(805, 12);
+            this.label3.Location = new System.Drawing.Point(609, 12);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(41, 22);
             this.label3.TabIndex = 13;
             this.label3.Text = "Tips";
-            // 
-            // textBox5
-            // 
-            this.textBox5.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.ForeColor = System.Drawing.Color.Black;
-            this.textBox5.Location = new System.Drawing.Point(523, 51);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(198, 186);
-            this.textBox5.TabIndex = 12;
-            this.textBox5.Text = "  Escribe una recomendación: ";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(572, 10);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 22);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "Presentación";
             // 
             // pictureBox2
             // 
@@ -308,36 +310,6 @@
             this.pictureBox2.Size = new System.Drawing.Size(36, 33);
             this.pictureBox2.TabIndex = 10;
             this.pictureBox2.TabStop = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.MistyRose;
-            this.button1.Font = new System.Drawing.Font("Myanmar Text", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(413, 263);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(111, 24);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Subir receta";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
-            this.pictureBox3.Location = new System.Drawing.Point(15, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(52, 43);
-            this.pictureBox3.TabIndex = 1;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
-            this.pictureBox4.Location = new System.Drawing.Point(888, 0);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(52, 43);
-            this.pictureBox4.TabIndex = 2;
-            this.pictureBox4.TabStop = false;
             // 
             // SubirReceta
             // 
@@ -352,14 +324,14 @@
             this.Size = new System.Drawing.Size(958, 562);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panelinfoRece.ResumeLayout(false);
             this.panelinfoRece.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -377,17 +349,15 @@
         private System.Windows.Forms.TextBox txtIngre;
         private System.Windows.Forms.Label lblIngrediente;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtPrepara;
+        private System.Windows.Forms.TextBox txtTiempo;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSubir;
+        private System.Windows.Forms.TextBox txtTips;
+        private System.Windows.Forms.Label label3;
     }
 }
