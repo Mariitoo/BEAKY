@@ -19,7 +19,7 @@ namespace BEAKY.Presentacion
 
         private void MenuPrincipal_Load(object sender, EventArgs e)
         {
-            panelBienveni.Dock = DockStyle.Fill;
+            panelBienvenida.Dock = DockStyle.Fill;
         }
 
         private void panel25_Paint(object sender, PaintEventArgs e)
@@ -41,6 +41,11 @@ namespace BEAKY.Presentacion
             panelMuestra.Controls.Clear();
             Control.Dock = DockStyle.Fill;
             panelMuestra.Controls.Add(Control);
+
+        }
+
+        private void panelMuestra_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }
