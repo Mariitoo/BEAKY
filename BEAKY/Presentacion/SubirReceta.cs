@@ -7,6 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BEAKY.Datos;
+using BEAKY.Logica;
+using System.Data.SqlClient;
+
 
 namespace BEAKY.Presentacion
 {
@@ -75,5 +79,55 @@ namespace BEAKY.Presentacion
         {
 
         }
+
+        private void btnSubir_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                CONEXION.abrir();
+                //AQUÍ SE EJECUTA EL SCRIPT PARA HACER INSERCIONES EN LA BD
+                String sql = " ";
+                sql = sql + "INSERT INTO [dbo].[receta] " + "\n";
+                sql = sql + "           ([nombre] " + "\n";
+                sql = sql + "           ,[tiempo] " + "\n";
+                sql = sql + "           ,[descripcion] " + "\n";
+                sql = sql + "           ,[ingrediente] " + "\n";
+                sql = sql + "           ,[tips] " + "\n";
+                sql = sql + "           ,[preparacion]) " + "\n";
+                sql = sql + "     VALUES " + "\n";
+                sql = sql + "           (@nombre " + "\n";
+                sql = sql + "           ,@tiempo " + "\n";
+                sql = sql + "           ,@descripcion " + "\n";
+                sql = sql + "           ,@ingrediente " + "\n";
+                sql = sql + "           ,@tips " + "\n";
+                sql = sql + "           ,@preparacion)";
+
+                //Aquí se lleva todo lo que esté contenido en los campos en los textbox
+                SqlCommand prueba = new SqlCommand(sql, CONEXION.conectar);
+                prueba.Parameters.AddWithValue("@nombre", txtNomRec.Text);
+                prueba.Parameters.AddWithValue("@tiempo", txtTiempo.Text);
+                prueba.Parameters.AddWithValue("@descripcion", txtIDesc.Text);
+                prueba.Parameters.AddWithValue("@ingrediente", txtIngre.Text);
+                prueba.Parameters.AddWithValue("@tips", txtTips.Text);
+                prueba.Parameters.AddWithValue("@preparacion", txtPrepara.Text);
+                prueba.ExecuteNonQuery();
+                MessageBox.Show("Información cargada exitosamente");
+
+
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("No jalas pa programar");
+
+                
+            }
+            finally
+            {
+                CONEXION.cerrar();
+            }
+            
+        }
+        
     }
 }
