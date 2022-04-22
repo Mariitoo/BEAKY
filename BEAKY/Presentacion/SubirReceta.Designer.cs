@@ -34,7 +34,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.lblSubRec = new System.Windows.Forms.Label();
             this.panelinfoRece = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTitulo = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtIDesc = new System.Windows.Forms.TextBox();
             this.lblBarraAzul = new System.Windows.Forms.Label();
@@ -104,7 +104,7 @@
             // panelinfoRece
             // 
             this.panelinfoRece.BackColor = System.Drawing.Color.White;
-            this.panelinfoRece.Controls.Add(this.textBox1);
+            this.panelinfoRece.Controls.Add(this.txtTitulo);
             this.panelinfoRece.Controls.Add(this.pictureBox1);
             this.panelinfoRece.Controls.Add(this.txtIDesc);
             this.panelinfoRece.Controls.Add(this.lblBarraAzul);
@@ -115,18 +115,18 @@
             this.panelinfoRece.Size = new System.Drawing.Size(958, 215);
             this.panelinfoRece.TabIndex = 5;
             // 
-            // textBox1
+            // txtTitulo
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Perpetua Titling MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.textBox1.Location = new System.Drawing.Point(373, 9);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(315, 26);
-            this.textBox1.TabIndex = 6;
-            this.textBox1.Text = "  Escribe el Titulo de la receta...";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtTitulo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtTitulo.Font = new System.Drawing.Font("Perpetua Titling MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTitulo.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtTitulo.Location = new System.Drawing.Point(373, 9);
+            this.txtTitulo.Name = "txtTitulo";
+            this.txtTitulo.Size = new System.Drawing.Size(315, 26);
+            this.txtTitulo.TabIndex = 6;
+            this.txtTitulo.Text = "  Escribe el Titulo de la receta...";
+            this.txtTitulo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtTitulo.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // pictureBox1
             // 
@@ -260,7 +260,7 @@
             this.panel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.panel2.Location = new System.Drawing.Point(0, 252);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(958, 307);
+            this.panel2.Size = new System.Drawing.Size(958, 295);
             this.panel2.TabIndex = 6;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -315,7 +315,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Gray;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelinfoRece);
             this.Controls.Add(this.panel1);
@@ -345,7 +345,7 @@
         private System.Windows.Forms.TextBox txtNomRec;
         private System.Windows.Forms.TextBox txtIDesc;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTitulo;
         private System.Windows.Forms.TextBox txtIngre;
         private System.Windows.Forms.Label lblIngrediente;
         private System.Windows.Forms.Label label1;

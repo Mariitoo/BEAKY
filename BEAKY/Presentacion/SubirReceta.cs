@@ -102,7 +102,6 @@ namespace BEAKY.Presentacion
                 sql = sql + "           ,@tips " + "\n";
                 sql = sql + "           ,@preparacion)";
 
-
                 //Aquí se lleva todo lo que esté contenido en los campos en los textbox
                 SqlCommand prueba = new SqlCommand(sql, CONEXION.conectar);
                 prueba.Parameters.AddWithValue("@nombre", txtNomRec.Text);
@@ -112,8 +111,10 @@ namespace BEAKY.Presentacion
                 prueba.Parameters.AddWithValue("@tips", txtTips.Text);
                 prueba.Parameters.AddWithValue("@preparacion", txtPrepara.Text);
                 prueba.ExecuteNonQuery();
+                MessageBox.Show("Información cargada exitosamente");
 
-                
+
+
             }
             catch (Exception)
             {
