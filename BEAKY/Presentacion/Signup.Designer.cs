@@ -60,7 +60,6 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.button1);
@@ -70,7 +69,7 @@
             this.panel2.Controls.Add(this.textBox3);
             this.panel2.Controls.Add(this.textBox2);
             this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Location = new System.Drawing.Point(305, 70);
+            this.panel2.Location = new System.Drawing.Point(277, 59);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(468, 539);
             this.panel2.TabIndex = 0;
@@ -140,9 +139,9 @@
             this.textBox1.BackColor = System.Drawing.Color.Pink;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(0, 0);
+            this.textBox1.Location = new System.Drawing.Point(-3, 0);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(468, 41);
+            this.textBox1.Size = new System.Drawing.Size(471, 41);
             this.textBox1.TabIndex = 0;
             this.textBox1.Text = "SIGN UP";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
