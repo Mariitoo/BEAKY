@@ -260,11 +260,12 @@
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(894, 13);
+            this.label3.Location = new System.Drawing.Point(828, 14);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 22);
+            this.label3.Size = new System.Drawing.Size(145, 22);
             this.label3.TabIndex = 13;
-            this.label3.Text = "Tips";
+            this.label3.Text = "Recomendaciones";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // txtTips
             // 
