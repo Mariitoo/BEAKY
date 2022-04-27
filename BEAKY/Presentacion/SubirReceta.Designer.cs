@@ -150,6 +150,7 @@
             this.txtIDesc.Size = new System.Drawing.Size(600, 228);
             this.txtIDesc.TabIndex = 4;
             this.txtIDesc.Text = "  Platica un poco sobre tu receta...";
+            this.txtIDesc.TextChanged += new System.EventHandler(this.txtIDesc_TextChanged);
             this.txtIDesc.Enter += new System.EventHandler(this.txtIDesc_Enter);
             this.txtIDesc.Leave += new System.EventHandler(this.txtIDesc_Leave);
             // 

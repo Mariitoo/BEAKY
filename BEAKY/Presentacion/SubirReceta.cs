@@ -128,6 +128,10 @@ namespace BEAKY.Presentacion
             }
             
         }
-        
+
+        private void txtIDesc_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
