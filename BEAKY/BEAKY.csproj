@@ -79,6 +79,12 @@
     <Compile Include="Presentacion\SubirReceta.Designer.cs">
       <DependentUpon>SubirReceta.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentacion\UserPorfile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentacion\UserPorfile.Designer.cs">
+      <DependentUpon>UserPorfile.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Presentacion\login.resx">
@@ -92,6 +98,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\SubirReceta.resx">
       <DependentUpon>SubirReceta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\UserPorfile.resx">
+      <DependentUpon>UserPorfile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
