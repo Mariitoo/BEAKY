@@ -73,7 +73,7 @@ namespace BEAKY.Presentacion
                 prueba.Parameters.AddWithValue("@email", textEmail.Text);
                 prueba.Parameters.AddWithValue("@passwd", textPasswd.Text);
                 prueba.ExecuteNonQuery();
-                MessageBox.Show("Información cargada exitosamente");
+                MessageBox.Show("Información cargada con éxito");
 
 
 
