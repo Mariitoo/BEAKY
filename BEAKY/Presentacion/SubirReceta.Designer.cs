@@ -266,7 +266,7 @@
             this.label3.Size = new System.Drawing.Size(145, 22);
             this.label3.TabIndex = 13;
             this.label3.Text = "Recomendaciones";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            
             // 
             // txtTips
             // 
