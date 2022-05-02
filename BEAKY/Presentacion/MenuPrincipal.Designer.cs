@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.panel23 = new System.Windows.Forms.Panel();
+            this.panelMuestra = new System.Windows.Forms.Panel();
+            this.panelBienveni = new System.Windows.Forms.Panel();
+            this.lblSubRec = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -58,10 +61,9 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelBienvenida = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panelBienveni = new System.Windows.Forms.Panel();
-            this.lblSubRec = new System.Windows.Forms.Label();
-            this.panelMuestra = new System.Windows.Forms.Panel();
             this.panel23.SuspendLayout();
+            this.panelMuestra.SuspendLayout();
+            this.panelBienveni.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel17.SuspendLayout();
@@ -73,8 +75,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
-            this.panelBienveni.SuspendLayout();
-            this.panelMuestra.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel23
@@ -87,6 +87,39 @@
             this.panel23.Name = "panel23";
             this.panel23.Size = new System.Drawing.Size(1186, 575);
             this.panel23.TabIndex = 0;
+            // 
+            // panelMuestra
+            // 
+            this.panelMuestra.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panelMuestra.Controls.Add(this.panelBienveni);
+            this.panelMuestra.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMuestra.Location = new System.Drawing.Point(165, 0);
+            this.panelMuestra.Name = "panelMuestra";
+            this.panelMuestra.Size = new System.Drawing.Size(1021, 575);
+            this.panelMuestra.TabIndex = 3;
+            this.panelMuestra.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMuestra_Paint);
+            // 
+            // panelBienveni
+            // 
+            this.panelBienveni.BackColor = System.Drawing.Color.MistyRose;
+            this.panelBienveni.Controls.Add(this.lblSubRec);
+            this.panelBienveni.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panelBienveni.Location = new System.Drawing.Point(0, 0);
+            this.panelBienveni.Name = "panelBienveni";
+            this.panelBienveni.Size = new System.Drawing.Size(1021, 54);
+            this.panelBienveni.TabIndex = 1;
+            // 
+            // lblSubRec
+            // 
+            this.lblSubRec.AutoSize = true;
+            this.lblSubRec.BackColor = System.Drawing.Color.Transparent;
+            this.lblSubRec.Font = new System.Drawing.Font("Microsoft Himalaya", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSubRec.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblSubRec.Location = new System.Drawing.Point(349, 12);
+            this.lblSubRec.Name = "lblSubRec";
+            this.lblSubRec.Size = new System.Drawing.Size(319, 27);
+            this.lblSubRec.TabIndex = 0;
+            this.lblSubRec.Text = "Bienvenido a Beaky, tú sistema de recetas";
             // 
             // panel4
             // 
@@ -339,6 +372,7 @@
             this.btnReceta.Text = "Receta";
             this.btnReceta.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnReceta.UseVisualStyleBackColor = false;
+            this.btnReceta.Click += new System.EventHandler(this.btnReceta_Click);
             // 
             // panel7
             // 
@@ -425,39 +459,6 @@
             this.panel2.Size = new System.Drawing.Size(1186, 575);
             this.panel2.TabIndex = 1;
             // 
-            // panelBienveni
-            // 
-            this.panelBienveni.BackColor = System.Drawing.Color.MistyRose;
-            this.panelBienveni.Controls.Add(this.lblSubRec);
-            this.panelBienveni.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panelBienveni.Location = new System.Drawing.Point(0, 0);
-            this.panelBienveni.Name = "panelBienveni";
-            this.panelBienveni.Size = new System.Drawing.Size(1021, 54);
-            this.panelBienveni.TabIndex = 1;
-            // 
-            // lblSubRec
-            // 
-            this.lblSubRec.AutoSize = true;
-            this.lblSubRec.BackColor = System.Drawing.Color.Transparent;
-            this.lblSubRec.Font = new System.Drawing.Font("Microsoft Himalaya", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSubRec.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblSubRec.Location = new System.Drawing.Point(349, 12);
-            this.lblSubRec.Name = "lblSubRec";
-            this.lblSubRec.Size = new System.Drawing.Size(319, 27);
-            this.lblSubRec.TabIndex = 0;
-            this.lblSubRec.Text = "Bienvenido a Beaky, tú sistema de recetas";
-            // 
-            // panelMuestra
-            // 
-            this.panelMuestra.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panelMuestra.Controls.Add(this.panelBienveni);
-            this.panelMuestra.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMuestra.Location = new System.Drawing.Point(165, 0);
-            this.panelMuestra.Name = "panelMuestra";
-            this.panelMuestra.Size = new System.Drawing.Size(1021, 575);
-            this.panelMuestra.TabIndex = 3;
-            this.panelMuestra.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMuestra_Paint);
-            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -471,6 +472,9 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MenuPrincipal_Load);
             this.panel23.ResumeLayout(false);
+            this.panelMuestra.ResumeLayout(false);
+            this.panelBienveni.ResumeLayout(false);
+            this.panelBienveni.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel17.ResumeLayout(false);
@@ -483,9 +487,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
-            this.panelBienveni.ResumeLayout(false);
-            this.panelBienveni.PerformLayout();
-            this.panelMuestra.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

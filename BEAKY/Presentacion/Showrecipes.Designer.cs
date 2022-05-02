@@ -30,30 +30,31 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Showrecipes));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lblTips = new System.Windows.Forms.Label();
+            this.lblIngredients = new System.Windows.Forms.Label();
+            this.lblPreparation = new System.Windows.Forms.Label();
+            this.lblTipsTit = new System.Windows.Forms.Label();
+            this.lblIngredientsTit = new System.Windows.Forms.Label();
+            this.lblPreparatonTit = new System.Windows.Forms.Label();
+            this.lblDescription = new System.Windows.Forms.Label();
+            this.lblDescriptionTit = new System.Windows.Forms.Label();
+            this.lblTime = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.lblUsername = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.vScrollBar2 = new System.Windows.Forms.VScrollBar();
+            this.btn1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -68,6 +69,31 @@
             this.panel1.Size = new System.Drawing.Size(1066, 53);
             this.panel1.TabIndex = 0;
             // 
+            // vScrollBar1
+            // 
+            this.vScrollBar1.Location = new System.Drawing.Point(1044, 52);
+            this.vScrollBar1.Name = "vScrollBar1";
+            this.vScrollBar1.Size = new System.Drawing.Size(21, 648);
+            this.vScrollBar1.TabIndex = 3;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
+            this.pictureBox2.Location = new System.Drawing.Point(404, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(42, 42);
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(633, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(39, 41);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -79,62 +105,115 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Recipes";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(633, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(39, 41);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.Location = new System.Drawing.Point(404, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(42, 42);
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.PapayaWhip;
-            this.panel2.Controls.Add(this.label11);
-            this.panel2.Controls.Add(this.label10);
-            this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.btn1);
+            this.panel2.Controls.Add(this.lblTips);
+            this.panel2.Controls.Add(this.lblIngredients);
+            this.panel2.Controls.Add(this.lblPreparation);
+            this.panel2.Controls.Add(this.lblTipsTit);
+            this.panel2.Controls.Add(this.lblIngredientsTit);
+            this.panel2.Controls.Add(this.lblPreparatonTit);
+            this.panel2.Controls.Add(this.lblDescription);
+            this.panel2.Controls.Add(this.lblDescriptionTit);
+            this.panel2.Controls.Add(this.lblTime);
             this.panel2.Controls.Add(this.pictureBox4);
-            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.lblUsername);
             this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Location = new System.Drawing.Point(12, 94);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1018, 457);
             this.panel2.TabIndex = 1;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // pictureBox3
+            // lblTips
             // 
-            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
-            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(60, 61);
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
+            this.lblTips.AutoSize = true;
+            this.lblTips.Location = new System.Drawing.Point(712, 314);
+            this.lblTips.Name = "lblTips";
+            this.lblTips.Size = new System.Drawing.Size(274, 104);
+            this.lblTips.TabIndex = 11;
+            this.lblTips.Text = resources.GetString("lblTips.Text");
             // 
-            // label2
+            // lblIngredients
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(66, 43);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(141, 18);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "  display username...";
+            this.lblIngredients.AutoSize = true;
+            this.lblIngredients.Location = new System.Drawing.Point(376, 314);
+            this.lblIngredients.Name = "lblIngredients";
+            this.lblIngredients.Size = new System.Drawing.Size(274, 104);
+            this.lblIngredients.TabIndex = 10;
+            this.lblIngredients.Text = resources.GetString("lblIngredients.Text");
+            // 
+            // lblPreparation
+            // 
+            this.lblPreparation.AutoSize = true;
+            this.lblPreparation.Location = new System.Drawing.Point(37, 314);
+            this.lblPreparation.Name = "lblPreparation";
+            this.lblPreparation.Size = new System.Drawing.Size(274, 104);
+            this.lblPreparation.TabIndex = 9;
+            this.lblPreparation.Text = resources.GetString("lblPreparation.Text");
+            // 
+            // lblTipsTit
+            // 
+            this.lblTipsTit.AutoSize = true;
+            this.lblTipsTit.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipsTit.Location = new System.Drawing.Point(810, 274);
+            this.lblTipsTit.Name = "lblTipsTit";
+            this.lblTipsTit.Size = new System.Drawing.Size(60, 27);
+            this.lblTipsTit.TabIndex = 8;
+            this.lblTipsTit.Text = "Tips:";
+            // 
+            // lblIngredientsTit
+            // 
+            this.lblIngredientsTit.AutoSize = true;
+            this.lblIngredientsTit.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIngredientsTit.Location = new System.Drawing.Point(438, 274);
+            this.lblIngredientsTit.Name = "lblIngredientsTit";
+            this.lblIngredientsTit.Size = new System.Drawing.Size(130, 27);
+            this.lblIngredientsTit.TabIndex = 7;
+            this.lblIngredientsTit.Text = "Ingredients:";
+            // 
+            // lblPreparatonTit
+            // 
+            this.lblPreparatonTit.AutoSize = true;
+            this.lblPreparatonTit.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPreparatonTit.Location = new System.Drawing.Point(99, 274);
+            this.lblPreparatonTit.Name = "lblPreparatonTit";
+            this.lblPreparatonTit.Size = new System.Drawing.Size(139, 27);
+            this.lblPreparatonTit.TabIndex = 6;
+            this.lblPreparatonTit.Text = "Preparation:";
+            // 
+            // lblDescription
+            // 
+            this.lblDescription.AutoSize = true;
+            this.lblDescription.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescription.Location = new System.Drawing.Point(229, 106);
+            this.lblDescription.Name = "lblDescription";
+            this.lblDescription.Size = new System.Drawing.Size(37, 15);
+            this.lblDescription.TabIndex = 5;
+            this.lblDescription.Text = "lorem";
+            this.lblDescription.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // lblDescriptionTit
+            // 
+            this.lblDescriptionTit.AutoSize = true;
+            this.lblDescriptionTit.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescriptionTit.Location = new System.Drawing.Point(449, 68);
+            this.lblDescriptionTit.Name = "lblDescriptionTit";
+            this.lblDescriptionTit.Size = new System.Drawing.Size(135, 27);
+            this.lblDescriptionTit.TabIndex = 4;
+            this.lblDescriptionTit.Text = "Description:";
+            // 
+            // lblTime
+            // 
+            this.lblTime.AutoSize = true;
+            this.lblTime.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTime.Location = new System.Drawing.Point(835, 43);
+            this.lblTime.Name = "lblTime";
+            this.lblTime.Size = new System.Drawing.Size(174, 16);
+            this.lblTime.TabIndex = 3;
+            this.lblTime.Text = " display preparation time...";
             // 
             // pictureBox4
             // 
@@ -145,99 +224,24 @@
             this.pictureBox4.TabIndex = 2;
             this.pictureBox4.TabStop = false;
             // 
-            // label3
+            // lblUsername
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(835, 43);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(174, 16);
-            this.label3.TabIndex = 3;
-            this.label3.Text = " display preparation time...";
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsername.Location = new System.Drawing.Point(66, 43);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(141, 18);
+            this.lblUsername.TabIndex = 1;
+            this.lblUsername.Text = "  display username...";
             // 
-            // label4
+            // pictureBox3
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(449, 68);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(135, 27);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Description:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(229, 106);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(613, 135);
-            this.label5.TabIndex = 5;
-            this.label5.Text = resources.GetString("label5.Text");
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(99, 274);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(139, 27);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "Preparation:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(438, 274);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(130, 27);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "Ingredients:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(810, 274);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(60, 27);
-            this.label8.TabIndex = 8;
-            this.label8.Text = "Tips:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(37, 314);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(274, 104);
-            this.label9.TabIndex = 9;
-            this.label9.Text = resources.GetString("label9.Text");
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(376, 314);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(274, 104);
-            this.label10.TabIndex = 10;
-            this.label10.Text = resources.GetString("label10.Text");
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(712, 314);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(274, 104);
-            this.label11.TabIndex = 11;
-            this.label11.Text = resources.GetString("label11.Text");
-            // 
-            // vScrollBar1
-            // 
-            this.vScrollBar1.Location = new System.Drawing.Point(1044, 52);
-            this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(21, 648);
-            this.vScrollBar1.TabIndex = 3;
+            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
+            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(60, 61);
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
             // 
             // vScrollBar2
             // 
@@ -245,6 +249,16 @@
             this.vScrollBar2.Name = "vScrollBar2";
             this.vScrollBar2.Size = new System.Drawing.Size(22, 649);
             this.vScrollBar2.TabIndex = 12;
+            // 
+            // btn1
+            // 
+            this.btn1.Location = new System.Drawing.Point(890, 136);
+            this.btn1.Name = "btn1";
+            this.btn1.Size = new System.Drawing.Size(64, 43);
+            this.btn1.TabIndex = 12;
+            this.btn1.Text = "button1";
+            this.btn1.UseVisualStyleBackColor = true;
+            this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
             // Showrecipes
             // 
@@ -258,12 +272,12 @@
             this.Size = new System.Drawing.Size(1066, 701);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -275,19 +289,20 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblTips;
+        private System.Windows.Forms.Label lblIngredients;
+        private System.Windows.Forms.Label lblPreparation;
+        private System.Windows.Forms.Label lblTipsTit;
+        private System.Windows.Forms.Label lblIngredientsTit;
+        private System.Windows.Forms.Label lblPreparatonTit;
+        private System.Windows.Forms.Label lblDescription;
+        private System.Windows.Forms.Label lblDescriptionTit;
+        private System.Windows.Forms.Label lblTime;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.VScrollBar vScrollBar1;
         private System.Windows.Forms.VScrollBar vScrollBar2;
+        private System.Windows.Forms.Button btn1;
     }
 }

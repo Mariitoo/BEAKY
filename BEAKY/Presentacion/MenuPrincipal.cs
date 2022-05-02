@@ -48,5 +48,13 @@ namespace BEAKY.Presentacion
         {
 
         }
+
+        private void btnReceta_Click(object sender, EventArgs e)
+        {
+            Showrecipes Control = new Showrecipes();
+            panelMuestra.Controls.Clear();
+            Control.Dock = DockStyle.Fill;
+            panelMuestra.Controls.Add(Control);
+        }
     }
 }
