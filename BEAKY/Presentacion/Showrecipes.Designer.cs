@@ -35,6 +35,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btn1 = new System.Windows.Forms.Button();
             this.lblTips = new System.Windows.Forms.Label();
             this.lblIngredients = new System.Windows.Forms.Label();
             this.lblPreparation = new System.Windows.Forms.Label();
@@ -48,18 +49,22 @@
             this.lblUsername = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.vScrollBar2 = new System.Windows.Forms.VScrollBar();
-            this.btn1 = new System.Windows.Forms.Button();
+            this.lblSearch = new System.Windows.Forms.TextBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.panel1.Controls.Add(this.pictureBox5);
+            this.panel1.Controls.Add(this.lblSearch);
             this.panel1.Controls.Add(this.vScrollBar1);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -103,7 +108,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(106, 35);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Recipes";
+            this.label1.Text = "Recetas";
             // 
             // panel2
             // 
@@ -126,6 +131,16 @@
             this.panel2.Size = new System.Drawing.Size(1018, 457);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // btn1
+            // 
+            this.btn1.Location = new System.Drawing.Point(890, 136);
+            this.btn1.Name = "btn1";
+            this.btn1.Size = new System.Drawing.Size(64, 43);
+            this.btn1.TabIndex = 12;
+            this.btn1.Text = "button1";
+            this.btn1.UseVisualStyleBackColor = true;
+            this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
             // lblTips
             // 
@@ -170,9 +185,9 @@
             this.lblIngredientsTit.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIngredientsTit.Location = new System.Drawing.Point(438, 274);
             this.lblIngredientsTit.Name = "lblIngredientsTit";
-            this.lblIngredientsTit.Size = new System.Drawing.Size(130, 27);
+            this.lblIngredientsTit.Size = new System.Drawing.Size(141, 27);
             this.lblIngredientsTit.TabIndex = 7;
-            this.lblIngredientsTit.Text = "Ingredients:";
+            this.lblIngredientsTit.Text = "Ingredientes:";
             // 
             // lblPreparatonTit
             // 
@@ -180,9 +195,9 @@
             this.lblPreparatonTit.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPreparatonTit.Location = new System.Drawing.Point(99, 274);
             this.lblPreparatonTit.Name = "lblPreparatonTit";
-            this.lblPreparatonTit.Size = new System.Drawing.Size(139, 27);
+            this.lblPreparatonTit.Size = new System.Drawing.Size(143, 27);
             this.lblPreparatonTit.TabIndex = 6;
-            this.lblPreparatonTit.Text = "Preparation:";
+            this.lblPreparatonTit.Text = "Preparación:";
             // 
             // lblDescription
             // 
@@ -201,9 +216,9 @@
             this.lblDescriptionTit.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDescriptionTit.Location = new System.Drawing.Point(449, 68);
             this.lblDescriptionTit.Name = "lblDescriptionTit";
-            this.lblDescriptionTit.Size = new System.Drawing.Size(135, 27);
+            this.lblDescriptionTit.Size = new System.Drawing.Size(139, 27);
             this.lblDescriptionTit.TabIndex = 4;
-            this.lblDescriptionTit.Text = "Description:";
+            this.lblDescriptionTit.Text = "Descripción:";
             // 
             // lblTime
             // 
@@ -211,9 +226,9 @@
             this.lblTime.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTime.Location = new System.Drawing.Point(835, 43);
             this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(174, 16);
+            this.lblTime.Size = new System.Drawing.Size(237, 16);
             this.lblTime.TabIndex = 3;
-            this.lblTime.Text = " display preparation time...";
+            this.lblTime.Text = "despliega el tiempo de preparacion...";
             // 
             // pictureBox4
             // 
@@ -230,9 +245,9 @@
             this.lblUsername.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsername.Location = new System.Drawing.Point(66, 43);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(141, 18);
+            this.lblUsername.Size = new System.Drawing.Size(147, 18);
             this.lblUsername.TabIndex = 1;
-            this.lblUsername.Text = "  display username...";
+            this.lblUsername.Text = "despliega el username";
             // 
             // pictureBox3
             // 
@@ -250,15 +265,23 @@
             this.vScrollBar2.Size = new System.Drawing.Size(22, 649);
             this.vScrollBar2.TabIndex = 12;
             // 
-            // btn1
+            // lblSearch
             // 
-            this.btn1.Location = new System.Drawing.Point(890, 136);
-            this.btn1.Name = "btn1";
-            this.btn1.Size = new System.Drawing.Size(64, 43);
-            this.btn1.TabIndex = 12;
-            this.btn1.Text = "button1";
-            this.btn1.UseVisualStyleBackColor = true;
-            this.btn1.Click += new System.EventHandler(this.btn1_Click);
+            this.lblSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSearch.Location = new System.Drawing.Point(817, 10);
+            this.lblSearch.Name = "lblSearch";
+            this.lblSearch.Size = new System.Drawing.Size(213, 22);
+            this.lblSearch.TabIndex = 4;
+            this.lblSearch.Text = "Busca tus recetas...";
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
+            this.pictureBox5.Location = new System.Drawing.Point(767, 4);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(44, 41);
+            this.pictureBox5.TabIndex = 5;
+            this.pictureBox5.TabStop = false;
             // 
             // Showrecipes
             // 
@@ -278,6 +301,7 @@
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -304,5 +328,7 @@
         private System.Windows.Forms.VScrollBar vScrollBar1;
         private System.Windows.Forms.VScrollBar vScrollBar2;
         private System.Windows.Forms.Button btn1;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.TextBox lblSearch;
     }
 }
