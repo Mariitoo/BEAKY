@@ -67,6 +67,12 @@
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\PlaceHold.cs" />
+    <Compile Include="Presentacion\shortcutrecipes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentacion\shortcutrecipes.Designer.cs">
+      <DependentUpon>shortcutrecipes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentacion\Showrecipes.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -98,6 +104,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\shortcutrecipes.resx">
+      <DependentUpon>shortcutrecipes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Showrecipes.resx">
       <DependentUpon>Showrecipes.cs</DependentUpon>
