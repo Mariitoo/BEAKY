@@ -50,7 +50,6 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.lblUsername = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.vScrollBar2 = new System.Windows.Forms.VScrollBar();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -72,7 +71,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1084, 53);
+            this.panel1.Size = new System.Drawing.Size(1044, 53);
             this.panel1.TabIndex = 0;
             // 
             // pictureBox5
@@ -103,7 +102,7 @@
             // pictureBox2
             // 
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.Location = new System.Drawing.Point(404, 3);
+            this.pictureBox2.Location = new System.Drawing.Point(315, 4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(42, 42);
             this.pictureBox2.TabIndex = 2;
@@ -123,7 +122,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Script MT Bold", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(487, 10);
+            this.label1.Location = new System.Drawing.Point(432, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(106, 35);
             this.label1.TabIndex = 0;
@@ -277,15 +276,9 @@
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
             // 
-            // vScrollBar2
-            // 
-            this.vScrollBar2.Location = new System.Drawing.Point(1062, 56);
-            this.vScrollBar2.Name = "vScrollBar2";
-            this.vScrollBar2.Size = new System.Drawing.Size(22, 696);
-            this.vScrollBar2.TabIndex = 12;
-            // 
             // panel3
             // 
+            this.panel3.AutoScroll = true;
             this.panel3.Location = new System.Drawing.Point(38, 532);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(946, 202);
@@ -295,13 +288,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.vScrollBar2);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Showrecipes";
-            this.Size = new System.Drawing.Size(1083, 752);
+            this.Size = new System.Drawing.Size(1047, 604);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -335,7 +328,6 @@
         private System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.VScrollBar vScrollBar1;
-        private System.Windows.Forms.VScrollBar vScrollBar2;
         private System.Windows.Forms.Button btn1;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.TextBox lblSearch;
