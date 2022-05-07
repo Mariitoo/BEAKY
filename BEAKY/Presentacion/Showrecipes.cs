@@ -36,9 +36,9 @@ namespace BEAKY.Presentacion
             {
                 lblDescription.Text = $"{dr["descripcion"].ToString()}";
                 lblPreparation.Text = $"{dr["preparacion"].ToString()}";
-                lblIngredients.Text = $"{dr["ingredientes"].ToString()}";
+                lblIngredients.Text = $"{dr["ingrediente"].ToString()}";
                 lblTips.Text = $"{dr["tips"].ToString()}";
-                lblTime.Text = $"{dr["tiempo_receta"].ToString()}";
+                lblTime.Text = $"{dr["tiempo"].ToString()}";
             }
             CONEXION.cerrar();
         }
