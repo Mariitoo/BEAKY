@@ -51,6 +51,9 @@
             this.lblUsername = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.DGDatos = new System.Windows.Forms.DataGridView();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.lblID = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -58,6 +61,8 @@
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DGDatos)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -91,6 +96,7 @@
             this.lblSearch.Size = new System.Drawing.Size(213, 22);
             this.lblSearch.TabIndex = 4;
             this.lblSearch.Text = "Busca tus recetas...";
+            this.lblSearch.TextChanged += new System.EventHandler(this.lblSearch_TextChanged);
             // 
             // vScrollBar1
             // 
@@ -131,6 +137,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.PapayaWhip;
+            this.panel2.Controls.Add(this.lblID);
+            this.panel2.Controls.Add(this.lblNombre);
             this.panel2.Controls.Add(this.btn1);
             this.panel2.Controls.Add(this.lblTips);
             this.panel2.Controls.Add(this.lblIngredients);
@@ -279,10 +287,42 @@
             // panel3
             // 
             this.panel3.AutoScroll = true;
+            this.panel3.Controls.Add(this.DGDatos);
             this.panel3.Location = new System.Drawing.Point(38, 532);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(946, 202);
             this.panel3.TabIndex = 13;
+            // 
+            // DGDatos
+            // 
+            this.DGDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGDatos.Location = new System.Drawing.Point(16, 3);
+            this.DGDatos.Name = "DGDatos";
+            this.DGDatos.ReadOnly = true;
+            this.DGDatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DGDatos.Size = new System.Drawing.Size(914, 199);
+            this.DGDatos.TabIndex = 13;
+            this.DGDatos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGDatos_CellClick);
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.Location = new System.Drawing.Point(419, 16);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(89, 27);
+            this.lblNombre.TabIndex = 15;
+            this.lblNombre.Text = "Nombre";
+            // 
+            // lblID
+            // 
+            this.lblID.AutoSize = true;
+            this.lblID.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblID.Location = new System.Drawing.Point(37, 89);
+            this.lblID.Name = "lblID";
+            this.lblID.Size = new System.Drawing.Size(147, 18);
+            this.lblID.TabIndex = 16;
+            this.lblID.Text = "despliega el username";
             // 
             // Showrecipes
             // 
@@ -294,7 +334,8 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Showrecipes";
-            this.Size = new System.Drawing.Size(1047, 604);
+            this.Size = new System.Drawing.Size(1013, 570);
+            this.Load += new System.EventHandler(this.Showrecipes_Load_1);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -304,6 +345,8 @@
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DGDatos)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -332,5 +375,8 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.TextBox lblSearch;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.DataGridView DGDatos;
+        private System.Windows.Forms.Label lblID;
+        private System.Windows.Forms.Label lblNombre;
     }
 }
