@@ -31,34 +31,35 @@ namespace BEAKY.Presentacion
             try
             {
                 //esto funciona
-                string consultar = $"select * from receta where nombre LIKE '%" + lblSearch.Text + "%'";
-                SqlDataAdapter adaptador = new SqlDataAdapter(consultar, CONEXION.conectar);
-                DataTable dt = new DataTable();
-                adaptador.Fill(dt);
-                DGDatos.DataSource = dt;
-                
-                SqlCommand comando = new SqlCommand(consultar, CONEXION.conectar);
-                SqlDataReader lector;
-                lector = comando.ExecuteReader();
+                //string consultar = $"select * from receta where nombre LIKE '%" + lblSearch.Text + "%'";
+                //SqlDataAdapter adaptador = new SqlDataAdapter(consultar, CONEXION.conectar);
+                //DataTable dt = new DataTable();
+                //adaptador.Fill(dt);
+                //DGDatos.DataSource = dt;
+
+                //SqlCommand comando = new SqlCommand(consultar, CONEXION.conectar);
+                //SqlDataReader lector;
+                //lector = comando.ExecuteReader();
 
 
                 //Esta parte no funciona, lo de arriba si, si quieres que funcione, solo quita los comentarios
-                //SqlCommand cmd = new SqlCommand($"select * from receta where nombre = '%'", CONEXION.conectar);
-                //cmd.CommandType = CommandType.Text;
+                SqlCommand cmd = new SqlCommand($"select * from receta where nombre LIKE '%" + lblSearch.Text + "%'", CONEXION.conectar);
+                cmd.CommandType = CommandType.Text;
 
                 //cmd.Parameters.AddWithValue("@nombre", lblSearch.Text);
-                //SqlDataReader dr = cmd.ExecuteReader();
-                //while (dr.Read())
-                //{
-                //    lblDescription.Text = $"{dr["descripcion"].ToString()}";
-                //    lblPreparation.Text = $"{dr["preparacion"].ToString()}";
-                //    lblIngredients.Text = $"{dr["ingrediente"].ToString()}";
-                //    lblTips.Text = $"{dr["tips"].ToString()}";
-                //    lblTime.Text = $"{dr["tiempo"].ToString()}";
-                //}
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    lblDescription.Text = $"{dr["descripcion"].ToString()}";
+                    lblPreparation.Text = $"{dr["preparacion"].ToString()}";
+                    lblIngredients.Text = $"{dr["ingrediente"].ToString()}";
+                    lblTips.Text = $"{dr["tips"].ToString()}";
+                    lblTime.Text = $"{dr["tiempo"].ToString()}";
+                }
             }
             catch (Exception ex)
             {
+                MessageBox.Show(ex.StackTrace);
                 MessageBox.Show(ex.StackTrace);
             }
             finally
