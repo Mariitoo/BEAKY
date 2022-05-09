@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuPrincipal));
             this.panel23 = new System.Windows.Forms.Panel();
             this.panelMuestra = new System.Windows.Forms.Panel();
             this.panelBienveni = new System.Windows.Forms.Panel();
@@ -43,7 +44,7 @@
             this.panel15 = new System.Windows.Forms.Panel();
             this.panel16 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.btnRestaurar = new System.Windows.Forms.Button();
+            this.btnBusqueda = new System.Windows.Forms.Button();
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
@@ -61,6 +62,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelBienvenida = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel23.SuspendLayout();
             this.panelMuestra.SuspendLayout();
             this.panelBienveni.SuspendLayout();
@@ -75,6 +77,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel23
@@ -243,7 +246,8 @@
             // 
             // panel11
             // 
-            this.panel11.Controls.Add(this.btnRestaurar);
+            this.panel11.Controls.Add(this.pictureBox1);
+            this.panel11.Controls.Add(this.btnBusqueda);
             this.panel11.Controls.Add(this.panel12);
             this.panel11.Controls.Add(this.panel13);
             this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
@@ -252,22 +256,23 @@
             this.panel11.Size = new System.Drawing.Size(165, 65);
             this.panel11.TabIndex = 2;
             // 
-            // btnRestaurar
+            // btnBusqueda
             // 
-            this.btnRestaurar.BackColor = System.Drawing.Color.MistyRose;
-            this.btnRestaurar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnRestaurar.FlatAppearance.BorderSize = 0;
-            this.btnRestaurar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRestaurar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRestaurar.ForeColor = System.Drawing.Color.Black;
-            this.btnRestaurar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRestaurar.Location = new System.Drawing.Point(10, 10);
-            this.btnRestaurar.Name = "btnRestaurar";
-            this.btnRestaurar.Size = new System.Drawing.Size(155, 55);
-            this.btnRestaurar.TabIndex = 3;
-            this.btnRestaurar.Text = "Restaurar Bd";
-            this.btnRestaurar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnRestaurar.UseVisualStyleBackColor = false;
+            this.btnBusqueda.BackColor = System.Drawing.Color.MistyRose;
+            this.btnBusqueda.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnBusqueda.FlatAppearance.BorderSize = 0;
+            this.btnBusqueda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBusqueda.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBusqueda.ForeColor = System.Drawing.Color.Black;
+            this.btnBusqueda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBusqueda.Location = new System.Drawing.Point(10, 10);
+            this.btnBusqueda.Name = "btnBusqueda";
+            this.btnBusqueda.Size = new System.Drawing.Size(155, 55);
+            this.btnBusqueda.TabIndex = 3;
+            this.btnBusqueda.Text = "Busqueda";
+            this.btnBusqueda.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBusqueda.UseVisualStyleBackColor = false;
+            this.btnBusqueda.Click += new System.EventHandler(this.btnBusqueda_Click);
             // 
             // panel12
             // 
@@ -459,6 +464,15 @@
             this.panel2.Size = new System.Drawing.Size(1186, 575);
             this.panel2.TabIndex = 1;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(16, 21);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(41, 38);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -487,6 +501,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -522,9 +537,10 @@
         private System.Windows.Forms.Panel panel24;
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnRestaurar;
+        private System.Windows.Forms.Button btnBusqueda;
         private System.Windows.Forms.Panel panelMuestra;
         private System.Windows.Forms.Panel panelBienveni;
         private System.Windows.Forms.Label lblSubRec;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

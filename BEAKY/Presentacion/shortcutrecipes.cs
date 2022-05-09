@@ -16,5 +16,6 @@ namespace BEAKY.Presentacion
         {
             InitializeComponent();
         }
+
     }
 }

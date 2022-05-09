@@ -54,6 +54,12 @@
     </Compile>
     <Compile Include="Datos\CONEXION.cs" />
     <Compile Include="Logica\receta.cs" />
+    <Compile Include="Presentacion\InicioSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\InicioSesion.Designer.cs">
+      <DependentUpon>InicioSesion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentacion\login.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -67,6 +73,12 @@
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\PlaceHold.cs" />
+    <Compile Include="Presentacion\Registrarse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Registrarse.Designer.cs">
+      <DependentUpon>Registrarse.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentacion\shortcutrecipes.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -99,11 +111,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Presentacion\InicioSesion.resx">
+      <DependentUpon>InicioSesion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Registrarse.resx">
+      <DependentUpon>Registrarse.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\shortcutrecipes.resx">
       <DependentUpon>shortcutrecipes.cs</DependentUpon>

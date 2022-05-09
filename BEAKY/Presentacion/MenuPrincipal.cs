@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BEAKY.Presentacion;
 
 namespace BEAKY.Presentacion
 {
@@ -15,6 +16,8 @@ namespace BEAKY.Presentacion
         public MenuPrincipal()
         {
             InitializeComponent();
+            btnUsuarios.Text = InicioSesion.username;
+
         }
 
         private void MenuPrincipal_Load(object sender, EventArgs e)
@@ -55,6 +58,14 @@ namespace BEAKY.Presentacion
             panelMuestra.Controls.Clear();
             Control.Dock = DockStyle.Fill;
             panelMuestra.Controls.Add(Control);
+        }
+
+        private void btnBusqueda_Click(object sender, EventArgs e)
+        {
+            shortcutrecipes shortcutrecipes = new shortcutrecipes();
+            panelMuestra.Controls.Clear();
+            shortcutrecipes.Dock = DockStyle.Fill;
+            panelMuestra.Controls.Add(shortcutrecipes);
         }
     }
 }
