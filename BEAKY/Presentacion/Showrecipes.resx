@@ -156,7 +156,7 @@
   <data name="pictureBox2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAL2AAAC9gH/U2/cAAAAB3RJ
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAL1AAAC9QFS6k6xAAAAB3RJ
         TUUH5gUBFxYFCQ5OhwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAPVSURBVFhH
         7dhPqFRlGMfxY1kWlJaYFhEEtlCRRKRVm0AMlBIlcGEtClyqq3DvQtFIUXORbgpBa1ErQRAUwkJDFIPS
         glKSBJXEf2WKJfn7DPPK3OO9zZ05V110f/CFmXOe5/c85z3vec87UzXQw2FWWBV2h+/DpTY+O+acGLH3
@@ -180,7 +180,7 @@
   <data name="pictureBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAL2AAAC9gH/U2/cAAAAB3RJ
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAL1AAAC9QFS6k6xAAAAB3RJ
         TUUH5gUBFxYFCQ5OhwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAPVSURBVFhH
         7dhPqFRlGMfxY1kWlJaYFhEEtlCRRKRVm0AMlBIlcGEtClyqq3DvQtFIUXORbgpBa1ErQRAUwkJDFIPS
         glKSBJXEf2WKJfn7DPPK3OO9zZ05V110f/CFmXOe5/c85z3vec87UzXQw2FWWBV2h+/DpTY+O+acGLH3
@@ -215,22 +215,25 @@ Proin lectus ligula, tristique eu leo ut, mollis gravida urna.
   <data name="lblIngredients.Text" xml:space="preserve">
     <value>Nunc nec ligula luctus, placerat dolor eget, placerat 
 mauris. Nulla rutrum lacus ac nulla blandit, sed mattis 
-odio convallis. 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
- Donec feugiat dolor diam, vel mattis purus vehicula nec.
+odio convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Donec feugiat dolor diam, vel mattis purus vehicula nec.
+ Ut eleifend non orci et aliquam. Ut non augue diam. Proin lectus ligula, tristique eu leo ut, mollis gravida urna.
+Donec feugiat dolor diam, vel mattis purus vehicula nec.
  Ut eleifend non orci et aliquam. Ut non augue diam. 
 Proin lectus ligula, tristique eu leo ut, mollis gravida urna.
+
  
 </value>
   </data>
   <data name="lblPreparation.Text" xml:space="preserve">
-    <value>Nunc nec ligula luctus, placerat dolor eget, placerat 
-mauris. Nulla rutrum lacus ac nulla blandit, sed mattis 
-odio convallis. 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    <value>Nunc nec ligula luctus, placerat dolor eget, placerat mauris. Nulla rutrum lacus ac nulla
+ blandit, sed mattis odio convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
  Donec feugiat dolor diam, vel mattis purus vehicula nec.
  Ut eleifend non orci et aliquam. Ut non augue diam. 
 Proin lectus ligula, tristique eu leo ut, mollis gravida urna.
+Donec feugiat dolor diam, vel mattis purus vehicula nec.
+ Ut eleifend non orci et aliquam. Ut non augue diam. 
+Proin lectus ligula, tristique eu leo ut, mollis gravida urna.
+
  </value>
   </data>
   <data name="pictureBox4.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

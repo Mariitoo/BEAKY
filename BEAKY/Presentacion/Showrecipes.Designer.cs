@@ -37,6 +37,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lblID = new System.Windows.Forms.Label();
+            this.lblNombre = new System.Windows.Forms.Label();
             this.btn1 = new System.Windows.Forms.Button();
             this.lblTips = new System.Windows.Forms.Label();
             this.lblIngredients = new System.Windows.Forms.Label();
@@ -52,8 +54,9 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.DGDatos = new System.Windows.Forms.DataGridView();
-            this.lblNombre = new System.Windows.Forms.Label();
-            this.lblID = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -63,6 +66,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGDatos)).BeginInit();
+            this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -137,12 +143,12 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.PapayaWhip;
+            this.panel2.Controls.Add(this.panel6);
+            this.panel2.Controls.Add(this.panel5);
+            this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.lblID);
             this.panel2.Controls.Add(this.lblNombre);
             this.panel2.Controls.Add(this.btn1);
-            this.panel2.Controls.Add(this.lblTips);
-            this.panel2.Controls.Add(this.lblIngredients);
-            this.panel2.Controls.Add(this.lblPreparation);
             this.panel2.Controls.Add(this.lblTipsTit);
             this.panel2.Controls.Add(this.lblIngredientsTit);
             this.panel2.Controls.Add(this.lblPreparatonTit);
@@ -158,6 +164,26 @@
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
+            // lblID
+            // 
+            this.lblID.AutoSize = true;
+            this.lblID.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblID.Location = new System.Drawing.Point(37, 89);
+            this.lblID.Name = "lblID";
+            this.lblID.Size = new System.Drawing.Size(147, 18);
+            this.lblID.TabIndex = 16;
+            this.lblID.Text = "despliega el username";
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.Location = new System.Drawing.Point(419, 16);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(89, 27);
+            this.lblNombre.TabIndex = 15;
+            this.lblNombre.Text = "Nombre";
+            // 
             // btn1
             // 
             this.btn1.Location = new System.Drawing.Point(890, 136);
@@ -171,7 +197,7 @@
             // lblTips
             // 
             this.lblTips.AutoSize = true;
-            this.lblTips.Location = new System.Drawing.Point(712, 314);
+            this.lblTips.Location = new System.Drawing.Point(12, 5);
             this.lblTips.Name = "lblTips";
             this.lblTips.Size = new System.Drawing.Size(274, 104);
             this.lblTips.TabIndex = 11;
@@ -180,18 +206,18 @@
             // lblIngredients
             // 
             this.lblIngredients.AutoSize = true;
-            this.lblIngredients.Location = new System.Drawing.Point(376, 314);
+            this.lblIngredients.Location = new System.Drawing.Point(26, 10);
             this.lblIngredients.Name = "lblIngredients";
-            this.lblIngredients.Size = new System.Drawing.Size(274, 104);
+            this.lblIngredients.Size = new System.Drawing.Size(596, 117);
             this.lblIngredients.TabIndex = 10;
             this.lblIngredients.Text = resources.GetString("lblIngredients.Text");
             // 
             // lblPreparation
             // 
             this.lblPreparation.AutoSize = true;
-            this.lblPreparation.Location = new System.Drawing.Point(37, 314);
+            this.lblPreparation.Location = new System.Drawing.Point(24, 10);
             this.lblPreparation.Name = "lblPreparation";
-            this.lblPreparation.Size = new System.Drawing.Size(274, 104);
+            this.lblPreparation.Size = new System.Drawing.Size(422, 130);
             this.lblPreparation.TabIndex = 9;
             this.lblPreparation.Text = resources.GetString("lblPreparation.Text");
             // 
@@ -304,25 +330,32 @@
             this.DGDatos.TabIndex = 13;
             this.DGDatos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGDatos_CellClick);
             // 
-            // lblNombre
+            // panel4
             // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(419, 16);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(89, 27);
-            this.lblNombre.TabIndex = 15;
-            this.lblNombre.Text = "Nombre";
+            this.panel4.AutoScroll = true;
+            this.panel4.Controls.Add(this.lblPreparation);
+            this.panel4.Location = new System.Drawing.Point(24, 304);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(296, 122);
+            this.panel4.TabIndex = 17;
             // 
-            // lblID
+            // panel5
             // 
-            this.lblID.AutoSize = true;
-            this.lblID.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblID.Location = new System.Drawing.Point(37, 89);
-            this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(147, 18);
-            this.lblID.TabIndex = 16;
-            this.lblID.Text = "despliega el username";
+            this.panel5.AutoScroll = true;
+            this.panel5.Controls.Add(this.lblIngredients);
+            this.panel5.Location = new System.Drawing.Point(360, 304);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(317, 122);
+            this.panel5.TabIndex = 18;
+            // 
+            // panel6
+            // 
+            this.panel6.AutoScroll = true;
+            this.panel6.Controls.Add(this.lblTips);
+            this.panel6.Location = new System.Drawing.Point(713, 309);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(240, 116);
+            this.panel6.TabIndex = 19;
             // 
             // Showrecipes
             // 
@@ -334,7 +367,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Showrecipes";
-            this.Size = new System.Drawing.Size(1013, 570);
+            this.Size = new System.Drawing.Size(1061, 612);
             this.Load += new System.EventHandler(this.Showrecipes_Load_1);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -347,6 +380,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DGDatos)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -378,5 +417,8 @@
         private System.Windows.Forms.DataGridView DGDatos;
         private System.Windows.Forms.Label lblID;
         private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel6;
     }
 }
