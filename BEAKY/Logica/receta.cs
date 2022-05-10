@@ -15,6 +15,9 @@ namespace BEAKY.Logica
         public string ingrediente { get; set; }
         public string tips { get; set; }
         public string preparacion { get; set; }
+        public int id_categoria { get; set; }
+        public string categoria { get; set; }
+
 
 
     }

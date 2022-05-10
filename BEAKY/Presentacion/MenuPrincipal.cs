@@ -67,5 +67,10 @@ namespace BEAKY.Presentacion
             shortcutrecipes.Dock = DockStyle.Fill;
             panelMuestra.Controls.Add(shortcutrecipes);
         }
+
+        private void btnUsuarios_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

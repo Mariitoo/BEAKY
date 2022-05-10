@@ -53,6 +53,11 @@
       <DependentUpon>BEAKYDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Datos\CONEXION.cs" />
+    <Compile Include="Datos\Dcategoria.cs" />
+    <Compile Include="Datos\Dreceta.cs" />
+    <Compile Include="Datos\Dusuario.cs" />
+    <Compile Include="Logica\Lcategoria.cs" />
+    <Compile Include="Logica\Lusuario.cs" />
     <Compile Include="Logica\receta.cs" />
     <Compile Include="Presentacion\InicioSesion.cs">
       <SubType>Form</SubType>

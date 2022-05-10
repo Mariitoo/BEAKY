@@ -27,21 +27,19 @@ namespace BEAKY.Presentacion
             sql = sql + "INSERT INTO [dbo].[usuario] " + "\n";
             sql = sql + "           ([nombre] " + "\n";
             sql = sql + "           ,[apellido] " + "\n";
-            sql = sql + "           ,[correo] " + "\n";
-            sql = sql + "           ,[contrasena] " + "\n";
+            sql = sql + "           ,[contra] " + "\n";
             sql = sql + "           ,[nombre_usuario]) " + "\n";
             sql = sql + "            VALUES " + "\n";
             sql = sql + "           (@nombre " + "\n";
             sql = sql + "           ,@apellido " + "\n";
-            sql = sql + "           ,@correo " + "\n";
-            sql = sql + "           ,@contrasena" + "\n";
+            sql = sql + "           ,@contra" + "\n";
             sql = sql + "           ,@nombre_usuario) " + "\n";
 
             SqlCommand prueba = new SqlCommand(sql, CONEXION.conectar);
             prueba.Parameters.AddWithValue("@nombre", tbName.Text);
             prueba.Parameters.AddWithValue("@apellido", tbLastName.Text);
-            prueba.Parameters.AddWithValue("@correo", tbEmail.Text);
-            prueba.Parameters.AddWithValue("@contrasena", tbPasswd.Text);
+            
+            prueba.Parameters.AddWithValue("@contra", tbPasswd.Text);
             prueba.Parameters.AddWithValue("@nombre_usuario", tbUserName.Text);
             prueba.ExecuteNonQuery();
             MessageBox.Show("Información cargada exitosamente");

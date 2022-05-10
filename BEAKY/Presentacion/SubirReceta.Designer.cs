@@ -34,6 +34,14 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.lblSubRec = new System.Windows.Forms.Label();
             this.panelinfoRece = new System.Windows.Forms.Panel();
+            this.DGCat = new System.Windows.Forms.DataGridView();
+            this.btnaggCat = new System.Windows.Forms.Button();
+            this.txtCat = new System.Windows.Forms.TextBox();
+            this.panelCat = new System.Windows.Forms.Panel();
+            this.txtCatG = new System.Windows.Forms.TextBox();
+            this.btnagregarCat = new System.Windows.Forms.Button();
+            this.lblcat = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.txtTitulo = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtIDesc = new System.Windows.Forms.TextBox();
@@ -50,10 +58,13 @@
             this.txtTips = new System.Windows.Forms.TextBox();
             this.btnSubir = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtIDUs = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panelinfoRece.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DGCat)).BeginInit();
+            this.panelCat.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
@@ -104,6 +115,12 @@
             // panelinfoRece
             // 
             this.panelinfoRece.BackColor = System.Drawing.Color.White;
+            this.panelinfoRece.Controls.Add(this.txtIDUs);
+            this.panelinfoRece.Controls.Add(this.DGCat);
+            this.panelinfoRece.Controls.Add(this.btnaggCat);
+            this.panelinfoRece.Controls.Add(this.txtCat);
+            this.panelinfoRece.Controls.Add(this.panelCat);
+            this.panelinfoRece.Controls.Add(this.label2);
             this.panelinfoRece.Controls.Add(this.txtTitulo);
             this.panelinfoRece.Controls.Add(this.pictureBox1);
             this.panelinfoRece.Controls.Add(this.txtIDesc);
@@ -114,6 +131,95 @@
             this.panelinfoRece.Name = "panelinfoRece";
             this.panelinfoRece.Size = new System.Drawing.Size(1064, 338);
             this.panelinfoRece.TabIndex = 5;
+            // 
+            // DGCat
+            // 
+            this.DGCat.AllowUserToAddRows = false;
+            this.DGCat.AllowUserToDeleteRows = false;
+            this.DGCat.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGCat.Location = new System.Drawing.Point(585, 183);
+            this.DGCat.Name = "DGCat";
+            this.DGCat.Size = new System.Drawing.Size(293, 120);
+            this.DGCat.TabIndex = 20;
+            this.DGCat.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGCat_CellContentClick);
+            // 
+            // btnaggCat
+            // 
+            this.btnaggCat.BackColor = System.Drawing.Color.MistyRose;
+            this.btnaggCat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnaggCat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnaggCat.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnaggCat.ForeColor = System.Drawing.Color.Black;
+            this.btnaggCat.Location = new System.Drawing.Point(908, 264);
+            this.btnaggCat.Name = "btnaggCat";
+            this.btnaggCat.Size = new System.Drawing.Size(153, 35);
+            this.btnaggCat.TabIndex = 17;
+            this.btnaggCat.Text = "Agregar Categoria";
+            this.btnaggCat.UseVisualStyleBackColor = false;
+            this.btnaggCat.Click += new System.EventHandler(this.btnaggCat_Click);
+            // 
+            // txtCat
+            // 
+            this.txtCat.Location = new System.Drawing.Point(948, 238);
+            this.txtCat.Name = "txtCat";
+            this.txtCat.Size = new System.Drawing.Size(104, 20);
+            this.txtCat.TabIndex = 18;
+            this.txtCat.TextChanged += new System.EventHandler(this.txtCat_TextChanged);
+            // 
+            // panelCat
+            // 
+            this.panelCat.Controls.Add(this.txtCatG);
+            this.panelCat.Controls.Add(this.btnagregarCat);
+            this.panelCat.Controls.Add(this.lblcat);
+            this.panelCat.Location = new System.Drawing.Point(899, 61);
+            this.panelCat.Name = "panelCat";
+            this.panelCat.Size = new System.Drawing.Size(165, 112);
+            this.panelCat.TabIndex = 7;
+            this.panelCat.Visible = false;
+            // 
+            // txtCatG
+            // 
+            this.txtCatG.Location = new System.Drawing.Point(58, 22);
+            this.txtCatG.Name = "txtCatG";
+            this.txtCatG.Size = new System.Drawing.Size(104, 20);
+            this.txtCatG.TabIndex = 16;
+            // 
+            // btnagregarCat
+            // 
+            this.btnagregarCat.BackColor = System.Drawing.Color.MistyRose;
+            this.btnagregarCat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnagregarCat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnagregarCat.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnagregarCat.ForeColor = System.Drawing.Color.Black;
+            this.btnagregarCat.Location = new System.Drawing.Point(12, 74);
+            this.btnagregarCat.Name = "btnagregarCat";
+            this.btnagregarCat.Size = new System.Drawing.Size(153, 35);
+            this.btnagregarCat.TabIndex = 16;
+            this.btnagregarCat.Text = "Agregar Categoria";
+            this.btnagregarCat.UseVisualStyleBackColor = false;
+            this.btnagregarCat.Click += new System.EventHandler(this.btnagregarCat_Click);
+            // 
+            // lblcat
+            // 
+            this.lblcat.AutoSize = true;
+            this.lblcat.BackColor = System.Drawing.Color.Transparent;
+            this.lblcat.ForeColor = System.Drawing.Color.Black;
+            this.lblcat.Location = new System.Drawing.Point(6, 25);
+            this.lblcat.Name = "lblcat";
+            this.lblcat.Size = new System.Drawing.Size(57, 13);
+            this.lblcat.TabIndex = 0;
+            this.lblcat.Text = "categoria: ";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(896, 241);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(57, 13);
+            this.label2.TabIndex = 17;
+            this.label2.Text = "categoria: ";
             // 
             // txtTitulo
             // 
@@ -315,6 +421,14 @@
             this.panel2.TabIndex = 6;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
+            // txtIDUs
+            // 
+            this.txtIDUs.Location = new System.Drawing.Point(41, 25);
+            this.txtIDUs.Name = "txtIDUs";
+            this.txtIDUs.Size = new System.Drawing.Size(71, 20);
+            this.txtIDUs.TabIndex = 16;
+            this.txtIDUs.TextChanged += new System.EventHandler(this.txtIDUs_TextChanged);
+            // 
             // SubirReceta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -332,6 +446,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panelinfoRece.ResumeLayout(false);
             this.panelinfoRece.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DGCat)).EndInit();
+            this.panelCat.ResumeLayout(false);
+            this.panelCat.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
@@ -363,5 +480,14 @@
         private System.Windows.Forms.TextBox txtTips;
         private System.Windows.Forms.Button btnSubir;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panelCat;
+        private System.Windows.Forms.Button btnagregarCat;
+        private System.Windows.Forms.Label lblcat;
+        private System.Windows.Forms.TextBox txtCat;
+        private System.Windows.Forms.TextBox txtCatG;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnaggCat;
+        private System.Windows.Forms.DataGridView DGCat;
+        private System.Windows.Forms.TextBox txtIDUs;
     }
 }
