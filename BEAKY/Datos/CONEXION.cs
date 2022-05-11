@@ -11,7 +11,7 @@ namespace BEAKY.Datos
 {
     public class CONEXION
     {
-        public static string conexion = @"Data Source=MARIO\SQLEXPRESS; Initial Catalog=BEAKY;Integrated Security=True";
+        public static string conexion = @"Data Source=DESKTOP-IG5DV6D\SQLEXPRESS; Initial Catalog=BEAKY;Integrated Security=True";
         public static SqlConnection conectar = new SqlConnection(conexion);
         public static void abrir()
         {
