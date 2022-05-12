@@ -78,6 +78,7 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel1.BackColor = System.Drawing.Color.AntiqueWhite;
             this.panel1.Controls.Add(this.pictureBox5);
             this.panel1.Controls.Add(this.lblSearch);
@@ -85,7 +86,7 @@
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(82, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1044, 53);
             this.panel1.TabIndex = 0;
@@ -148,6 +149,7 @@
             // 
             // panel2
             // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel2.BackColor = System.Drawing.Color.PapayaWhip;
             this.panel2.Controls.Add(this.panel6);
             this.panel2.Controls.Add(this.panel5);
@@ -163,7 +165,7 @@
             this.panel2.Controls.Add(this.pictureBox4);
             this.panel2.Controls.Add(this.lblUsername);
             this.panel2.Controls.Add(this.pictureBox3);
-            this.panel2.Location = new System.Drawing.Point(14, 82);
+            this.panel2.Location = new System.Drawing.Point(97, 82);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1027, 444);
             this.panel2.TabIndex = 1;
@@ -229,9 +231,9 @@
             this.lblID.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblID.Location = new System.Drawing.Point(37, 89);
             this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(147, 18);
+            this.lblID.Size = new System.Drawing.Size(106, 18);
             this.lblID.TabIndex = 16;
-            this.lblID.Text = "despliega el username";
+            this.lblID.Text = "despliega el ID";
             // 
             // lblNombre
             // 
@@ -335,11 +337,12 @@
             // 
             // panel3
             // 
+            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel3.AutoScroll = true;
             this.panel3.Controls.Add(this.DGDatos);
-            this.panel3.Location = new System.Drawing.Point(38, 532);
+            this.panel3.Location = new System.Drawing.Point(97, 584);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(946, 202);
+            this.panel3.Size = new System.Drawing.Size(788, 147);
             this.panel3.TabIndex = 13;
             // 
             // DGDatos
@@ -356,23 +359,26 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.groupBox1.BackColor = System.Drawing.Color.Bisque;
             this.groupBox1.Controls.Add(this.rbEntradas);
             this.groupBox1.Controls.Add(this.rb3Leches);
             this.groupBox1.Controls.Add(this.rbHealty);
             this.groupBox1.Controls.Add(this.rbPostres);
-            this.groupBox1.Location = new System.Drawing.Point(233, 82);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(912, 584);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(223, 144);
+            this.groupBox1.Size = new System.Drawing.Size(186, 144);
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Text = "Categorias :";
             // 
             // rbEntradas
             // 
             this.rbEntradas.AutoSize = true;
             this.rbEntradas.Location = new System.Drawing.Point(17, 95);
             this.rbEntradas.Name = "rbEntradas";
-            this.rbEntradas.Size = new System.Drawing.Size(67, 17);
+            this.rbEntradas.Size = new System.Drawing.Size(79, 20);
             this.rbEntradas.TabIndex = 3;
             this.rbEntradas.TabStop = true;
             this.rbEntradas.Text = "Entradas";
@@ -383,7 +389,7 @@
             this.rb3Leches.AutoSize = true;
             this.rb3Leches.Location = new System.Drawing.Point(17, 72);
             this.rb3Leches.Name = "rb3Leches";
-            this.rb3Leches.Size = new System.Drawing.Size(69, 17);
+            this.rb3Leches.Size = new System.Drawing.Size(79, 20);
             this.rb3Leches.TabIndex = 2;
             this.rb3Leches.TabStop = true;
             this.rb3Leches.Text = "3 Leches";
@@ -394,7 +400,7 @@
             this.rbHealty.AutoSize = true;
             this.rbHealty.Location = new System.Drawing.Point(17, 49);
             this.rbHealty.Name = "rbHealty";
-            this.rbHealty.Size = new System.Drawing.Size(61, 17);
+            this.rbHealty.Size = new System.Drawing.Size(71, 20);
             this.rbHealty.TabIndex = 1;
             this.rbHealty.TabStop = true;
             this.rbHealty.Text = "Healthy";
@@ -405,7 +411,7 @@
             this.rbPostres.AutoSize = true;
             this.rbPostres.Location = new System.Drawing.Point(17, 23);
             this.rbPostres.Name = "rbPostres";
-            this.rbPostres.Size = new System.Drawing.Size(60, 17);
+            this.rbPostres.Size = new System.Drawing.Size(71, 20);
             this.rbPostres.TabIndex = 0;
             this.rbPostres.TabStop = true;
             this.rbPostres.Text = "Postres";
@@ -423,7 +429,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Showrecipes";
-            this.Size = new System.Drawing.Size(1010, 578);
+            this.Size = new System.Drawing.Size(1208, 758);
             this.Load += new System.EventHandler(this.Showrecipes_Load_1);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

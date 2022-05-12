@@ -62,10 +62,7 @@ namespace BEAKY.Presentacion
 
         private void btnBusqueda_Click(object sender, EventArgs e)
         {
-            shortcutrecipes shortcutrecipes = new shortcutrecipes();
-            panelMuestra.Controls.Clear();
-            shortcutrecipes.Dock = DockStyle.Fill;
-            panelMuestra.Controls.Add(shortcutrecipes);
+           
         }
 
         private void btnUsuarios_Click(object sender, EventArgs e)

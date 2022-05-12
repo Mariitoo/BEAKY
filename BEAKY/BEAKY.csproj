@@ -66,6 +66,7 @@
     <Compile Include="Presentacion\InicioSesion.Designer.cs">
       <DependentUpon>InicioSesion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentacion\LimpiarTexto.cs" />
     <Compile Include="Presentacion\MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,23 +80,11 @@
     <Compile Include="Presentacion\Registrarse.Designer.cs">
       <DependentUpon>Registrarse.cs</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\shortcutrecipes.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Presentacion\shortcutrecipes.Designer.cs">
-      <DependentUpon>shortcutrecipes.cs</DependentUpon>
-    </Compile>
     <Compile Include="Presentacion\Showrecipes.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Presentacion\Showrecipes.Designer.cs">
       <DependentUpon>Showrecipes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\Signup.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Presentacion\Signup.Designer.cs">
-      <DependentUpon>Signup.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\SubirReceta.cs">
       <SubType>UserControl</SubType>
@@ -120,14 +109,8 @@
     <EmbeddedResource Include="Presentacion\Registrarse.resx">
       <DependentUpon>Registrarse.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\shortcutrecipes.resx">
-      <DependentUpon>shortcutrecipes.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Showrecipes.resx">
       <DependentUpon>Showrecipes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Signup.resx">
-      <DependentUpon>Signup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\SubirReceta.resx">
       <DependentUpon>SubirReceta.cs</DependentUpon>

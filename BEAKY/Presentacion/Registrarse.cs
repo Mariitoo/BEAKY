@@ -11,6 +11,7 @@ using BEAKY.Datos;
 using BEAKY.Logica;
 using System.Data.SqlClient;
 
+
 namespace BEAKY.Presentacion
 {
     public partial class Registrarse : Form
@@ -36,17 +37,23 @@ namespace BEAKY.Presentacion
             sql = sql + "           ,@nombre_usuario) " + "\n";
 
             SqlCommand prueba = new SqlCommand(sql, CONEXION.conectar);
-            prueba.Parameters.AddWithValue("@nombre", tbName.Text);
-            prueba.Parameters.AddWithValue("@apellido", tbLastName.Text);
+            prueba.Parameters.AddWithValue("@nombre", tbName2.Text);
+            prueba.Parameters.AddWithValue("@apellido", tbLastName3.Text);
             
-            prueba.Parameters.AddWithValue("@contra", tbPasswd.Text);
-            prueba.Parameters.AddWithValue("@nombre_usuario", tbUserName.Text);
+            prueba.Parameters.AddWithValue("@contra", tbPasswd5.Text);
+            prueba.Parameters.AddWithValue("@nombre_usuario", tbUserName1.Text);
             prueba.ExecuteNonQuery();
             MessageBox.Show("Información cargada exitosamente");
             CONEXION.cerrar();
             InicioSesion inicsec = new InicioSesion();
             inicsec.Show();
             this.Hide();
+        }
+
+        private void btnBorrar_Click(object sender, EventArgs e)
+        {
+            LimpiarTexto limpiarTexto = new LimpiarTexto();
+            limpiarTexto.BorrarCampos(this);
         }
     }
 }

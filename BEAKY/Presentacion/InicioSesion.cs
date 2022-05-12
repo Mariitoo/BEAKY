@@ -39,7 +39,7 @@ namespace BEAKY.Presentacion
             try
             {
                 CONEXION.abrir();
-                String query = "SELECT * FROM usuario WHERE nombre_usuario = '" + tbUserName.Text + "'AND contra = '" + tbPasswd.Text + "'";
+                String query = "SELECT * FROM usuario WHERE nombre_usuario = '" + tbUserName.Text + "'AND contrasena = '" + tbPasswd.Text + "'";
                 SqlDataAdapter sda = new SqlDataAdapter(query, CONEXION.conectar);
 
                 DataTable dtable = new DataTable();

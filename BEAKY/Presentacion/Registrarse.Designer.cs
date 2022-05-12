@@ -32,28 +32,32 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnSignup = new System.Windows.Forms.Button();
-            this.tbLastName = new System.Windows.Forms.TextBox();
-            this.tbPasswd = new System.Windows.Forms.TextBox();
-            this.tbEmail = new System.Windows.Forms.TextBox();
-            this.tbUserName = new System.Windows.Forms.TextBox();
-            this.tbName = new System.Windows.Forms.TextBox();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.btnBorrar = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnSignup = new System.Windows.Forms.Button();
+            this.tbLastName3 = new System.Windows.Forms.TextBox();
+            this.tbPasswd5 = new System.Windows.Forms.TextBox();
+            this.textEmail4 = new System.Windows.Forms.TextBox();
+            this.tbUserName1 = new System.Windows.Forms.TextBox();
+            this.tbName2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.Controls.Add(this.textBox7);
             this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.textBox7);
             this.panel1.Location = new System.Drawing.Point(-64, -57);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1024, 669);
@@ -73,130 +77,199 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.Controls.Add(this.panel3);
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(this.btnBorrar);
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.btnSignup);
-            this.panel2.Controls.Add(this.tbLastName);
-            this.panel2.Controls.Add(this.tbPasswd);
-            this.panel2.Controls.Add(this.tbEmail);
-            this.panel2.Controls.Add(this.tbUserName);
-            this.panel2.Controls.Add(this.tbName);
-            this.panel2.Location = new System.Drawing.Point(277, 59);
+            this.panel2.Controls.Add(this.tbLastName3);
+            this.panel2.Controls.Add(this.tbPasswd5);
+            this.panel2.Controls.Add(this.textEmail4);
+            this.panel2.Controls.Add(this.tbUserName1);
+            this.panel2.Controls.Add(this.tbName2);
+            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Location = new System.Drawing.Point(184, 69);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(468, 539);
-            this.panel2.TabIndex = 0;
+            this.panel2.Size = new System.Drawing.Size(690, 539);
+            this.panel2.TabIndex = 6;
+            // 
+            // btnBorrar
+            // 
+            this.btnBorrar.BackColor = System.Drawing.Color.MistyRose;
+            this.btnBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnBorrar.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBorrar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnBorrar.Location = new System.Drawing.Point(395, 457);
+            this.btnBorrar.Name = "btnBorrar";
+            this.btnBorrar.Size = new System.Drawing.Size(168, 57);
+            this.btnBorrar.TabIndex = 15;
+            this.btnBorrar.Text = "Borrar";
+            this.btnBorrar.UseVisualStyleBackColor = false;
+            this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.MistyRose;
+            this.label5.Font = new System.Drawing.Font("Modern No. 20", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label5.Location = new System.Drawing.Point(27, 386);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(138, 31);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "Password :";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.MistyRose;
+            this.label4.Font = new System.Drawing.Font("Modern No. 20", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label4.Location = new System.Drawing.Point(27, 316);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(201, 31);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Email Address :";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.MistyRose;
+            this.label1.Font = new System.Drawing.Font("Modern No. 20", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label1.Location = new System.Drawing.Point(27, 251);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(156, 31);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Last Name :";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.MistyRose;
+            this.label3.Font = new System.Drawing.Font("Modern No. 20", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label3.Location = new System.Drawing.Point(27, 176);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(161, 31);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "First Name :";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.MistyRose;
+            this.label2.Font = new System.Drawing.Font("Modern No. 20", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label2.Location = new System.Drawing.Point(27, 108);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(145, 31);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Username :";
             // 
             // pictureBox2
             // 
+            this.pictureBox2.BackColor = System.Drawing.Color.MistyRose;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(87, 3);
+            this.pictureBox2.Location = new System.Drawing.Point(203, 0);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(39, 41);
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(337, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(39, 41);
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
-            // 
             // btnSignup
             // 
             this.btnSignup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnSignup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSignup.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSignup.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSignup.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnSignup.Location = new System.Drawing.Point(154, 458);
+            this.btnSignup.Location = new System.Drawing.Point(129, 457);
             this.btnSignup.Name = "btnSignup";
             this.btnSignup.Size = new System.Drawing.Size(168, 57);
             this.btnSignup.TabIndex = 6;
             this.btnSignup.Text = "Registrarse";
             this.btnSignup.UseVisualStyleBackColor = false;
-            this.btnSignup.Click += new System.EventHandler(this.btnSignup_Click);
             // 
-            // tbLastName
+            // tbLastName3
             // 
-            this.tbLastName.BackColor = System.Drawing.Color.Ivory;
-            this.tbLastName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbLastName.Font = new System.Drawing.Font("Rockwell", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbLastName.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.tbLastName.Location = new System.Drawing.Point(21, 237);
-            this.tbLastName.Name = "tbLastName";
-            this.tbLastName.Size = new System.Drawing.Size(417, 42);
-            this.tbLastName.TabIndex = 5;
-            this.tbLastName.Text = "Apellido";
+            this.tbLastName3.BackColor = System.Drawing.Color.Ivory;
+            this.tbLastName3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbLastName3.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbLastName3.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.tbLastName3.Location = new System.Drawing.Point(252, 240);
+            this.tbLastName3.Name = "tbLastName3";
+            this.tbLastName3.Size = new System.Drawing.Size(417, 30);
+            this.tbLastName3.TabIndex = 5;
             // 
-            // tbPasswd
+            // tbPasswd5
             // 
-            this.tbPasswd.BackColor = System.Drawing.Color.Ivory;
-            this.tbPasswd.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbPasswd.Font = new System.Drawing.Font("Rockwell", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbPasswd.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.tbPasswd.Location = new System.Drawing.Point(21, 380);
-            this.tbPasswd.Name = "tbPasswd";
-            this.tbPasswd.Size = new System.Drawing.Size(417, 42);
-            this.tbPasswd.TabIndex = 4;
-            this.tbPasswd.Text = "Contraseña";
+            this.tbPasswd5.BackColor = System.Drawing.Color.Ivory;
+            this.tbPasswd5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbPasswd5.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbPasswd5.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.tbPasswd5.Location = new System.Drawing.Point(252, 383);
+            this.tbPasswd5.Name = "tbPasswd5";
+            this.tbPasswd5.Size = new System.Drawing.Size(417, 30);
+            this.tbPasswd5.TabIndex = 4;
             // 
-            // tbEmail
+            // textEmail4
             // 
-            this.tbEmail.BackColor = System.Drawing.Color.Ivory;
-            this.tbEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbEmail.Font = new System.Drawing.Font("Rockwell", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbEmail.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.tbEmail.Location = new System.Drawing.Point(21, 310);
-            this.tbEmail.Name = "tbEmail";
-            this.tbEmail.Size = new System.Drawing.Size(417, 42);
-            this.tbEmail.TabIndex = 3;
-            this.tbEmail.Text = "email";
+            this.textEmail4.BackColor = System.Drawing.Color.Ivory;
+            this.textEmail4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textEmail4.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textEmail4.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.textEmail4.Location = new System.Drawing.Point(252, 313);
+            this.textEmail4.Name = "textEmail4";
+            this.textEmail4.Size = new System.Drawing.Size(417, 30);
+            this.textEmail4.TabIndex = 3;
             // 
-            // tbUserName
+            // tbUserName1
             // 
-            this.tbUserName.BackColor = System.Drawing.Color.Ivory;
-            this.tbUserName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbUserName.Font = new System.Drawing.Font("Rockwell", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbUserName.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.tbUserName.Location = new System.Drawing.Point(21, 91);
-            this.tbUserName.Name = "tbUserName";
-            this.tbUserName.Size = new System.Drawing.Size(417, 42);
-            this.tbUserName.TabIndex = 2;
-            this.tbUserName.Text = "Nombre de usuario";
+            this.tbUserName1.BackColor = System.Drawing.Color.Ivory;
+            this.tbUserName1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbUserName1.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbUserName1.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.tbUserName1.Location = new System.Drawing.Point(252, 97);
+            this.tbUserName1.Name = "tbUserName1";
+            this.tbUserName1.Size = new System.Drawing.Size(417, 30);
+            this.tbUserName1.TabIndex = 2;
             // 
-            // tbName
+            // tbName2
             // 
-            this.tbName.BackColor = System.Drawing.Color.Ivory;
-            this.tbName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbName.Font = new System.Drawing.Font("Rockwell", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbName.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.tbName.Location = new System.Drawing.Point(21, 164);
-            this.tbName.Name = "tbName";
-            this.tbName.Size = new System.Drawing.Size(417, 42);
-            this.tbName.TabIndex = 1;
-            this.tbName.Text = "Primer Nombre";
+            this.tbName2.BackColor = System.Drawing.Color.Ivory;
+            this.tbName2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbName2.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbName2.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.tbName2.Location = new System.Drawing.Point(252, 165);
+            this.tbName2.Name = "tbName2";
+            this.tbName2.Size = new System.Drawing.Size(417, 30);
+            this.tbName2.TabIndex = 1;
             // 
-            // panel3
+            // textBox1
             // 
-            this.panel3.BackColor = System.Drawing.Color.MistyRose;
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Controls.Add(this.pictureBox1);
-            this.panel3.Controls.Add(this.pictureBox2);
-            this.panel3.Location = new System.Drawing.Point(0, 3);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(466, 47);
-            this.panel3.TabIndex = 7;
+            this.textBox1.BackColor = System.Drawing.Color.MistyRose;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(-3, 0);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(693, 41);
+            this.textBox1.TabIndex = 0;
+            this.textBox1.Text = "SIGN UP";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label1
+            // pictureBox1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(167, 4);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(135, 39);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "SIGN UP";
+            this.pictureBox1.BackColor = System.Drawing.Color.MistyRose;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(442, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(39, 41);
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
             // 
             // Registrarse
             // 
@@ -212,8 +285,6 @@
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -223,15 +294,20 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnSignup;
-        private System.Windows.Forms.TextBox tbLastName;
-        private System.Windows.Forms.TextBox tbPasswd;
-        private System.Windows.Forms.TextBox tbEmail;
-        private System.Windows.Forms.TextBox tbUserName;
-        private System.Windows.Forms.TextBox tbName;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button btnBorrar;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button btnSignup;
+        private System.Windows.Forms.TextBox tbLastName3;
+        private System.Windows.Forms.TextBox tbPasswd5;
+        private System.Windows.Forms.TextBox textEmail4;
+        private System.Windows.Forms.TextBox tbUserName1;
+        private System.Windows.Forms.TextBox tbName2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
