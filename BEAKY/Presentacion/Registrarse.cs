@@ -44,6 +44,9 @@ namespace BEAKY.Presentacion
             prueba.ExecuteNonQuery();
             MessageBox.Show("Información cargada exitosamente");
             CONEXION.cerrar();
+            InicioSesion inicsec = new InicioSesion();
+            inicsec.Show();
+            this.Hide();
         }
     }
 }

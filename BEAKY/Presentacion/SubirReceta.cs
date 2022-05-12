@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using BEAKY.Datos;
 using BEAKY.Logica;
 using System.Data.SqlClient;
+using BEAKY.Presentacion;
 
 
 namespace BEAKY.Presentacion
@@ -117,9 +118,7 @@ namespace BEAKY.Presentacion
                 prueba.Parameters.AddWithValue("@categoria", txtCat.Text);
                 prueba.ExecuteNonQuery();
                 //InsertarReceta();
-               
-
-
+                //Limpiar();
 
             }
             catch (Exception ex)
@@ -172,6 +171,17 @@ namespace BEAKY.Presentacion
                 buscarCat();
             }
         }
+        private void Limpiar()
+        {
+            txtCat.Clear();
+            txtIDesc.Clear();
+            txtNomRec.Clear();
+            txtIngre.Clear();
+            txtTiempo.Clear();
+            txtTips.Clear();
+            txtTitulo.Clear();
+            txtPrepara.Clear();
+        }
 
         private void buscarCat()
         {
@@ -222,6 +232,15 @@ namespace BEAKY.Presentacion
         {
             
             
+        }
+
+        private void panelinfoRece_Paint(object sender, PaintEventArgs e)
+        {
+            string consultar = $"select categoria from categoria";
+            SqlDataAdapter adaptador = new SqlDataAdapter(consultar, CONEXION.conectar);
+            DataTable dt = new DataTable();
+            adaptador.Fill(dt);
+            DGCat.DataSource = dt;
         }
     }
 }

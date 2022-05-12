@@ -34,26 +34,26 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtApellido = new System.Windows.Forms.TextBox();
+            this.txtNomUS = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.lbl1 = new System.Windows.Forms.Label();
+            this.lbl2 = new System.Windows.Forms.Label();
+            this.lbl3 = new System.Windows.Forms.Label();
+            this.lbl4 = new System.Windows.Forms.Label();
+            this.lbl5 = new System.Windows.Forms.Label();
+            this.lbl6 = new System.Windows.Forms.Label();
+            this.lbl7 = new System.Windows.Forms.Label();
+            this.lbl8 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.Datos = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -61,6 +61,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Datos)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -99,9 +100,8 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.textBox3);
-            this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.txtApellido);
+            this.panel2.Controls.Add(this.txtNomUS);
             this.panel2.Location = new System.Drawing.Point(221, 85);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
@@ -120,39 +120,25 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Personal Info";
             // 
-            // textBox3
+            // txtApellido
             // 
-            this.textBox3.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox3.Location = new System.Drawing.Point(141, 156);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(520, 173);
-            this.textBox3.TabIndex = 2;
-            this.textBox3.Text = "Tell us about yourself...";
+            this.txtApellido.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtApellido.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.txtApellido.Location = new System.Drawing.Point(141, 98);
+            this.txtApellido.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtApellido.Name = "txtApellido";
+            this.txtApellido.Size = new System.Drawing.Size(520, 30);
+            this.txtApellido.TabIndex = 1;
             // 
-            // textBox2
+            // txtNomUS
             // 
-            this.textBox2.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.textBox2.Location = new System.Drawing.Point(141, 98);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(520, 30);
-            this.textBox2.TabIndex = 1;
-            this.textBox2.Text = "E-mail Address is displayed here";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.textBox1.Location = new System.Drawing.Point(141, 60);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(520, 30);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "Full name displayed here";
+            this.txtNomUS.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNomUS.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.txtNomUS.Location = new System.Drawing.Point(141, 60);
+            this.txtNomUS.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtNomUS.Name = "txtNomUS";
+            this.txtNomUS.Size = new System.Drawing.Size(520, 30);
+            this.txtNomUS.TabIndex = 0;
             // 
             // panel3
             // 
@@ -186,61 +172,113 @@
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
             // 
-            // panel4
+            // label3
             // 
-            this.panel4.AutoScroll = true;
-            this.panel4.Controls.Add(this.label15);
-            this.panel4.Controls.Add(this.label14);
-            this.panel4.Controls.Add(this.label13);
-            this.panel4.Controls.Add(this.label12);
-            this.panel4.Controls.Add(this.label11);
-            this.panel4.Controls.Add(this.label10);
-            this.panel4.Controls.Add(this.label9);
-            this.panel4.Controls.Add(this.label8);
-            this.panel4.Controls.Add(this.label7);
-            this.panel4.Controls.Add(this.label6);
-            this.panel4.Controls.Add(this.label5);
-            this.panel4.Controls.Add(this.label4);
-            this.panel4.Location = new System.Drawing.Point(22, 53);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(989, 73);
-            this.panel4.TabIndex = 5;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label3.Location = new System.Drawing.Point(447, 6);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(113, 25);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Your recipes";
             // 
-            // label15
+            // lbl1
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label15.Location = new System.Drawing.Point(720, 113);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(159, 25);
-            this.label15.TabIndex = 15;
-            this.label15.Text = "12.- Recipe Name";
+            this.lbl1.AutoSize = true;
+            this.lbl1.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl1.ForeColor = System.Drawing.Color.Black;
+            this.lbl1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl1.Location = new System.Drawing.Point(20, 24);
+            this.lbl1.Name = "lbl1";
+            this.lbl1.Size = new System.Drawing.Size(149, 25);
+            this.lbl1.TabIndex = 4;
+            this.lbl1.Text = "1.- Recipe Name";
             // 
-            // label14
+            // lbl2
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label14.Location = new System.Drawing.Point(720, 70);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(159, 25);
-            this.label14.TabIndex = 14;
-            this.label14.Text = "11.- Recipe Name";
+            this.lbl2.AutoSize = true;
+            this.lbl2.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2.ForeColor = System.Drawing.Color.Black;
+            this.lbl2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl2.Location = new System.Drawing.Point(20, 70);
+            this.lbl2.Name = "lbl2";
+            this.lbl2.Size = new System.Drawing.Size(149, 25);
+            this.lbl2.TabIndex = 5;
+            this.lbl2.Text = "2.- Recipe Name";
             // 
-            // label13
+            // lbl3
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label13.Location = new System.Drawing.Point(720, 24);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(159, 25);
-            this.label13.TabIndex = 13;
-            this.label13.Text = "10.- Recipe Name";
+            this.lbl3.AutoSize = true;
+            this.lbl3.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl3.ForeColor = System.Drawing.Color.Black;
+            this.lbl3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl3.Location = new System.Drawing.Point(20, 113);
+            this.lbl3.Name = "lbl3";
+            this.lbl3.Size = new System.Drawing.Size(149, 25);
+            this.lbl3.TabIndex = 6;
+            this.lbl3.Text = "3.- Recipe Name";
+            // 
+            // lbl4
+            // 
+            this.lbl4.AutoSize = true;
+            this.lbl4.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl4.ForeColor = System.Drawing.Color.Black;
+            this.lbl4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl4.Location = new System.Drawing.Point(300, 24);
+            this.lbl4.Name = "lbl4";
+            this.lbl4.Size = new System.Drawing.Size(149, 25);
+            this.lbl4.TabIndex = 7;
+            this.lbl4.Text = "4.- Recipe Name";
+            // 
+            // lbl5
+            // 
+            this.lbl5.AutoSize = true;
+            this.lbl5.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl5.ForeColor = System.Drawing.Color.Black;
+            this.lbl5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl5.Location = new System.Drawing.Point(300, 70);
+            this.lbl5.Name = "lbl5";
+            this.lbl5.Size = new System.Drawing.Size(149, 25);
+            this.lbl5.TabIndex = 8;
+            this.lbl5.Text = "5.- Recipe Name";
+            // 
+            // lbl6
+            // 
+            this.lbl6.AutoSize = true;
+            this.lbl6.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl6.ForeColor = System.Drawing.Color.Black;
+            this.lbl6.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl6.Location = new System.Drawing.Point(300, 113);
+            this.lbl6.Name = "lbl6";
+            this.lbl6.Size = new System.Drawing.Size(149, 25);
+            this.lbl6.TabIndex = 9;
+            this.lbl6.Text = "6.- Recipe Name";
+            // 
+            // lbl7
+            // 
+            this.lbl7.AutoSize = true;
+            this.lbl7.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl7.ForeColor = System.Drawing.Color.Black;
+            this.lbl7.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl7.Location = new System.Drawing.Point(519, 24);
+            this.lbl7.Name = "lbl7";
+            this.lbl7.Size = new System.Drawing.Size(149, 25);
+            this.lbl7.TabIndex = 10;
+            this.lbl7.Text = "7.- Recipe Name";
+            // 
+            // lbl8
+            // 
+            this.lbl8.AutoSize = true;
+            this.lbl8.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl8.ForeColor = System.Drawing.Color.Black;
+            this.lbl8.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbl8.Location = new System.Drawing.Point(519, 70);
+            this.lbl8.Name = "lbl8";
+            this.lbl8.Size = new System.Drawing.Size(149, 25);
+            this.lbl8.TabIndex = 11;
+            this.lbl8.Text = "8.- Recipe Name";
             // 
             // label12
             // 
@@ -254,113 +292,74 @@
             this.label12.TabIndex = 12;
             this.label12.Text = "9.- Recipe Name";
             // 
-            // label11
+            // label13
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label11.Location = new System.Drawing.Point(519, 70);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(149, 25);
-            this.label11.TabIndex = 11;
-            this.label11.Text = "8.- Recipe Name";
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Black;
+            this.label13.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label13.Location = new System.Drawing.Point(720, 24);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(159, 25);
+            this.label13.TabIndex = 13;
+            this.label13.Text = "10.- Recipe Name";
             // 
-            // label10
+            // label14
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label10.Location = new System.Drawing.Point(519, 24);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(149, 25);
-            this.label10.TabIndex = 10;
-            this.label10.Text = "7.- Recipe Name";
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.Black;
+            this.label14.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label14.Location = new System.Drawing.Point(720, 70);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(159, 25);
+            this.label14.TabIndex = 14;
+            this.label14.Text = "11.- Recipe Name";
             // 
-            // label9
+            // label15
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label9.Location = new System.Drawing.Point(300, 113);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(149, 25);
-            this.label9.TabIndex = 9;
-            this.label9.Text = "6.- Recipe Name";
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.Black;
+            this.label15.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label15.Location = new System.Drawing.Point(720, 113);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(159, 25);
+            this.label15.TabIndex = 15;
+            this.label15.Text = "12.- Recipe Name";
             // 
-            // label8
+            // panel4
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label8.Location = new System.Drawing.Point(300, 70);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(149, 25);
-            this.label8.TabIndex = 8;
-            this.label8.Text = "5.- Recipe Name";
+            this.panel4.AutoScroll = true;
+            this.panel4.Controls.Add(this.Datos);
+            this.panel4.Controls.Add(this.label15);
+            this.panel4.Controls.Add(this.label14);
+            this.panel4.Controls.Add(this.label13);
+            this.panel4.Controls.Add(this.label12);
+            this.panel4.Controls.Add(this.lbl8);
+            this.panel4.Controls.Add(this.lbl7);
+            this.panel4.Controls.Add(this.lbl6);
+            this.panel4.Controls.Add(this.lbl5);
+            this.panel4.Controls.Add(this.lbl4);
+            this.panel4.Controls.Add(this.lbl3);
+            this.panel4.Controls.Add(this.lbl2);
+            this.panel4.Controls.Add(this.lbl1);
+            this.panel4.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel4.Location = new System.Drawing.Point(22, 53);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(989, 142);
+            this.panel4.TabIndex = 5;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
-            // label7
+            // Datos
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label7.Location = new System.Drawing.Point(300, 24);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(149, 25);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "4.- Recipe Name";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label6.Location = new System.Drawing.Point(20, 113);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(149, 25);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "3.- Recipe Name";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label5.Location = new System.Drawing.Point(20, 70);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(149, 25);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "2.- Recipe Name";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label4.Location = new System.Drawing.Point(20, 24);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(149, 25);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "1.- Recipe Name";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label3.Location = new System.Drawing.Point(447, 6);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(113, 25);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Your recipes";
+            this.Datos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Datos.Location = new System.Drawing.Point(13, 0);
+            this.Datos.Name = "Datos";
+            this.Datos.ReadOnly = true;
+            this.Datos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.Datos.Size = new System.Drawing.Size(914, 199);
+            this.Datos.TabIndex = 16;
             // 
             // UserPorfile
             // 
@@ -375,6 +374,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "UserPorfile";
             this.Size = new System.Drawing.Size(1038, 694);
+            this.Load += new System.EventHandler(this.UserPorfile_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -386,6 +386,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Datos)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -397,25 +398,25 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtApellido;
+        private System.Windows.Forms.TextBox txtNomUS;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lbl8;
+        private System.Windows.Forms.Label lbl7;
+        private System.Windows.Forms.Label lbl6;
+        private System.Windows.Forms.Label lbl5;
+        private System.Windows.Forms.Label lbl4;
+        private System.Windows.Forms.Label lbl3;
+        private System.Windows.Forms.Label lbl2;
+        private System.Windows.Forms.Label lbl1;
+        private System.Windows.Forms.DataGridView Datos;
     }
 }

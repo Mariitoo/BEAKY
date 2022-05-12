@@ -11,6 +11,7 @@ using BEAKY.Datos;
 using BEAKY.Logica;
 using System.Data.SqlClient;
 
+
 namespace BEAKY.Presentacion
 {
     public partial class InicioSesion : Form
@@ -25,6 +26,7 @@ namespace BEAKY.Presentacion
         {
             Registrarse registrarse = new Registrarse();
             registrarse.Show();
+            this.Hide();
         }
            static public string username, passwd;
 
@@ -51,6 +53,7 @@ namespace BEAKY.Presentacion
                     MenuPrincipal menuPrincipal = new MenuPrincipal();
                     menuPrincipal.Show();
                     this.Hide();
+
                 }
                 else
                 {

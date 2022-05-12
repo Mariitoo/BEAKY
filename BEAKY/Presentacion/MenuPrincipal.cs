@@ -70,7 +70,10 @@ namespace BEAKY.Presentacion
 
         private void btnUsuarios_Click(object sender, EventArgs e)
         {
-
+            UserPorfile Control = new UserPorfile();
+            panelMuestra.Controls.Clear();
+            Control.Dock = DockStyle.Fill;
+            panelMuestra.Controls.Add(Control);
         }
     }
 }

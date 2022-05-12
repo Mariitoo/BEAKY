@@ -27,6 +27,56 @@ namespace BEAKY.Presentacion
 
         private void btn1_Click(object sender, EventArgs e)
         {
+           
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void Showrecipes_Load(object sender, EventArgs e)
+        {
+            string consultar = $"select * from receta";
+            SqlDataAdapter adaptador = new SqlDataAdapter(consultar, CONEXION.conectar);
+            DataTable dt = new DataTable();
+            adaptador.Fill(dt);
+            DGDatos.DataSource = dt;
+
+        }
+
+        private void lblSearch_TextChanged(object sender, EventArgs e)
+        {
+            //Esto lo podremos quitar si queremos
+
+            //SqlDataAdapter cmd = new SqlDataAdapter($"select * from receta where nombre = '" + this.lblSearch.Text + "'", CONEXION.conectar);
+            //DataSet ds = new DataSet();
+            //cmd.Fill(ds, "receta");
+            //this.DGDatos.DataSource = ds.Tables[0];
+        }
+
+        private void DGDatos_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            lblID.Text = DGDatos.SelectedCells[0].Value.ToString();
+            lblNombre.Text = DGDatos.SelectedCells[1].Value.ToString();
+            lblTime.Text = DGDatos.SelectedCells[2].Value.ToString();
+            lblDescription.Text = DGDatos.SelectedCells[3].Value.ToString();
+            lblIngredients.Text = DGDatos.SelectedCells[4].Value.ToString();
+            lblTips.Text = DGDatos.SelectedCells[5].Value.ToString();
+            lblPreparation.Text = DGDatos.SelectedCells[6].Value.ToString();
+        }
+
+        private void Showrecipes_Load_1(object sender, EventArgs e)
+        {
+            string consultar = $"select * from receta";
+            SqlDataAdapter adaptador = new SqlDataAdapter(consultar, CONEXION.conectar);
+            DataTable dt = new DataTable();
+            adaptador.Fill(dt);
+            DGDatos.DataSource = dt;
+            lblUsername.Text = InicioSesion.username;
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
             CONEXION.abrir();
             try
             {
@@ -56,11 +106,16 @@ namespace BEAKY.Presentacion
                     lblTips.Text = $"{dr["tips"].ToString()}";
                     lblTime.Text = $"{dr["tiempo"].ToString()}";
                 }
+              
+
+               
+
+                
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.StackTrace);
-                MessageBox.Show(ex.StackTrace);
+
             }
             finally
             {
@@ -70,48 +125,22 @@ namespace BEAKY.Presentacion
             }
         }
 
-        private void label5_Click(object sender, EventArgs e)
+        private void DGDatos_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
-        private void Showrecipes_Load(object sender, EventArgs e)
-        {
-            string consultar = $"select * from receta";
-            SqlDataAdapter adaptador = new SqlDataAdapter(consultar, CONEXION.conectar);
-            DataTable dt = new DataTable();
-            adaptador.Fill(dt);
-            DGDatos.DataSource = dt;
 
+        private void lblUsername_Click(object sender, EventArgs e)
+        {
+            lblUsername.Text = InicioSesion.username;
         }
 
-        private void lblSearch_TextChanged(object sender, EventArgs e)
+        private void rbPostres_CheckedChanged(object sender, EventArgs e)
         {
-            //Esto lo podremos quitar si queremos
-
-            SqlDataAdapter cmd = new SqlDataAdapter($"select * from receta where nombre = '" + this.lblSearch.Text + "'", CONEXION.conectar);
+            SqlDataAdapter adaptador = new SqlDataAdapter($"SELECT * FROM receta WHERE categoria = 'Postres'", CONEXION.conectar);
             DataSet ds = new DataSet();
-            cmd.Fill(ds, "receta");
-            this.DGDatos.DataSource = ds.Tables[0];
-        }
-
-        private void DGDatos_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            lblID.Text = DGDatos.SelectedCells[0].Value.ToString();
-            lblNombre.Text = DGDatos.SelectedCells[1].Value.ToString();
-            lblTime.Text = DGDatos.SelectedCells[2].Value.ToString();
-            lblDescription.Text = DGDatos.SelectedCells[3].Value.ToString();
-            lblIngredients.Text = DGDatos.SelectedCells[4].Value.ToString();
-            lblTips.Text = DGDatos.SelectedCells[5].Value.ToString();
-            lblPreparation.Text = DGDatos.SelectedCells[6].Value.ToString();
-        }
-
-        private void Showrecipes_Load_1(object sender, EventArgs e)
-        {
-            string consultar = $"select * from receta";
-            SqlDataAdapter adaptador = new SqlDataAdapter(consultar, CONEXION.conectar);
-            DataTable dt = new DataTable();
-            adaptador.Fill(dt);
-            DGDatos.DataSource = dt;
+            adaptador.Fill(ds);
+            DGDatos.DataSource = ds.Tables[0];
         }
     }
 }

@@ -37,12 +37,14 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.lblTips = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.lblIngredients = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.lblPreparation = new System.Windows.Forms.Label();
             this.lblID = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
-            this.btn1 = new System.Windows.Forms.Button();
-            this.lblTips = new System.Windows.Forms.Label();
-            this.lblIngredients = new System.Windows.Forms.Label();
-            this.lblPreparation = new System.Windows.Forms.Label();
             this.lblTipsTit = new System.Windows.Forms.Label();
             this.lblIngredientsTit = new System.Windows.Forms.Label();
             this.lblPreparatonTit = new System.Windows.Forms.Label();
@@ -54,21 +56,24 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.DGDatos = new System.Windows.Forms.DataGridView();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rbEntradas = new System.Windows.Forms.RadioButton();
+            this.rb3Leches = new System.Windows.Forms.RadioButton();
+            this.rbHealty = new System.Windows.Forms.RadioButton();
+            this.rbPostres = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGDatos)).BeginInit();
-            this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -88,11 +93,12 @@
             // pictureBox5
             // 
             this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
-            this.pictureBox5.Location = new System.Drawing.Point(767, 4);
+            this.pictureBox5.Location = new System.Drawing.Point(747, 5);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(44, 41);
             this.pictureBox5.TabIndex = 5;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // lblSearch
             // 
@@ -148,7 +154,6 @@
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.lblID);
             this.panel2.Controls.Add(this.lblNombre);
-            this.panel2.Controls.Add(this.btn1);
             this.panel2.Controls.Add(this.lblTipsTit);
             this.panel2.Controls.Add(this.lblIngredientsTit);
             this.panel2.Controls.Add(this.lblPreparatonTit);
@@ -163,6 +168,60 @@
             this.panel2.Size = new System.Drawing.Size(1027, 444);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // panel6
+            // 
+            this.panel6.AutoScroll = true;
+            this.panel6.Controls.Add(this.lblTips);
+            this.panel6.Location = new System.Drawing.Point(713, 309);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(240, 116);
+            this.panel6.TabIndex = 19;
+            // 
+            // lblTips
+            // 
+            this.lblTips.AutoSize = true;
+            this.lblTips.Location = new System.Drawing.Point(12, 5);
+            this.lblTips.Name = "lblTips";
+            this.lblTips.Size = new System.Drawing.Size(274, 104);
+            this.lblTips.TabIndex = 11;
+            this.lblTips.Text = resources.GetString("lblTips.Text");
+            // 
+            // panel5
+            // 
+            this.panel5.AutoScroll = true;
+            this.panel5.Controls.Add(this.lblIngredients);
+            this.panel5.Location = new System.Drawing.Point(360, 304);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(317, 122);
+            this.panel5.TabIndex = 18;
+            // 
+            // lblIngredients
+            // 
+            this.lblIngredients.AutoSize = true;
+            this.lblIngredients.Location = new System.Drawing.Point(26, 10);
+            this.lblIngredients.Name = "lblIngredients";
+            this.lblIngredients.Size = new System.Drawing.Size(596, 117);
+            this.lblIngredients.TabIndex = 10;
+            this.lblIngredients.Text = resources.GetString("lblIngredients.Text");
+            // 
+            // panel4
+            // 
+            this.panel4.AutoScroll = true;
+            this.panel4.Controls.Add(this.lblPreparation);
+            this.panel4.Location = new System.Drawing.Point(24, 304);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(296, 122);
+            this.panel4.TabIndex = 17;
+            // 
+            // lblPreparation
+            // 
+            this.lblPreparation.AutoSize = true;
+            this.lblPreparation.Location = new System.Drawing.Point(24, 10);
+            this.lblPreparation.Name = "lblPreparation";
+            this.lblPreparation.Size = new System.Drawing.Size(422, 130);
+            this.lblPreparation.TabIndex = 9;
+            this.lblPreparation.Text = resources.GetString("lblPreparation.Text");
             // 
             // lblID
             // 
@@ -183,43 +242,6 @@
             this.lblNombre.Size = new System.Drawing.Size(89, 27);
             this.lblNombre.TabIndex = 15;
             this.lblNombre.Text = "Nombre";
-            // 
-            // btn1
-            // 
-            this.btn1.Location = new System.Drawing.Point(890, 136);
-            this.btn1.Name = "btn1";
-            this.btn1.Size = new System.Drawing.Size(64, 43);
-            this.btn1.TabIndex = 12;
-            this.btn1.Text = "button1";
-            this.btn1.UseVisualStyleBackColor = true;
-            this.btn1.Click += new System.EventHandler(this.btn1_Click);
-            // 
-            // lblTips
-            // 
-            this.lblTips.AutoSize = true;
-            this.lblTips.Location = new System.Drawing.Point(12, 5);
-            this.lblTips.Name = "lblTips";
-            this.lblTips.Size = new System.Drawing.Size(274, 104);
-            this.lblTips.TabIndex = 11;
-            this.lblTips.Text = resources.GetString("lblTips.Text");
-            // 
-            // lblIngredients
-            // 
-            this.lblIngredients.AutoSize = true;
-            this.lblIngredients.Location = new System.Drawing.Point(26, 10);
-            this.lblIngredients.Name = "lblIngredients";
-            this.lblIngredients.Size = new System.Drawing.Size(596, 117);
-            this.lblIngredients.TabIndex = 10;
-            this.lblIngredients.Text = resources.GetString("lblIngredients.Text");
-            // 
-            // lblPreparation
-            // 
-            this.lblPreparation.AutoSize = true;
-            this.lblPreparation.Location = new System.Drawing.Point(24, 10);
-            this.lblPreparation.Name = "lblPreparation";
-            this.lblPreparation.Size = new System.Drawing.Size(422, 130);
-            this.lblPreparation.TabIndex = 9;
-            this.lblPreparation.Text = resources.GetString("lblPreparation.Text");
             // 
             // lblTipsTit
             // 
@@ -300,6 +322,7 @@
             this.lblUsername.Size = new System.Drawing.Size(147, 18);
             this.lblUsername.TabIndex = 1;
             this.lblUsername.Text = "despliega el username";
+            this.lblUsername.Click += new System.EventHandler(this.lblUsername_Click);
             // 
             // pictureBox3
             // 
@@ -329,33 +352,65 @@
             this.DGDatos.Size = new System.Drawing.Size(914, 199);
             this.DGDatos.TabIndex = 13;
             this.DGDatos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGDatos_CellClick);
+            this.DGDatos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGDatos_CellContentClick);
             // 
-            // panel4
+            // groupBox1
             // 
-            this.panel4.AutoScroll = true;
-            this.panel4.Controls.Add(this.lblPreparation);
-            this.panel4.Location = new System.Drawing.Point(24, 304);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(296, 122);
-            this.panel4.TabIndex = 17;
+            this.groupBox1.Controls.Add(this.rbEntradas);
+            this.groupBox1.Controls.Add(this.rb3Leches);
+            this.groupBox1.Controls.Add(this.rbHealty);
+            this.groupBox1.Controls.Add(this.rbPostres);
+            this.groupBox1.Location = new System.Drawing.Point(233, 82);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(223, 144);
+            this.groupBox1.TabIndex = 14;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
             // 
-            // panel5
+            // rbEntradas
             // 
-            this.panel5.AutoScroll = true;
-            this.panel5.Controls.Add(this.lblIngredients);
-            this.panel5.Location = new System.Drawing.Point(360, 304);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(317, 122);
-            this.panel5.TabIndex = 18;
+            this.rbEntradas.AutoSize = true;
+            this.rbEntradas.Location = new System.Drawing.Point(17, 95);
+            this.rbEntradas.Name = "rbEntradas";
+            this.rbEntradas.Size = new System.Drawing.Size(67, 17);
+            this.rbEntradas.TabIndex = 3;
+            this.rbEntradas.TabStop = true;
+            this.rbEntradas.Text = "Entradas";
+            this.rbEntradas.UseVisualStyleBackColor = true;
             // 
-            // panel6
+            // rb3Leches
             // 
-            this.panel6.AutoScroll = true;
-            this.panel6.Controls.Add(this.lblTips);
-            this.panel6.Location = new System.Drawing.Point(713, 309);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(240, 116);
-            this.panel6.TabIndex = 19;
+            this.rb3Leches.AutoSize = true;
+            this.rb3Leches.Location = new System.Drawing.Point(17, 72);
+            this.rb3Leches.Name = "rb3Leches";
+            this.rb3Leches.Size = new System.Drawing.Size(69, 17);
+            this.rb3Leches.TabIndex = 2;
+            this.rb3Leches.TabStop = true;
+            this.rb3Leches.Text = "3 Leches";
+            this.rb3Leches.UseVisualStyleBackColor = true;
+            // 
+            // rbHealty
+            // 
+            this.rbHealty.AutoSize = true;
+            this.rbHealty.Location = new System.Drawing.Point(17, 49);
+            this.rbHealty.Name = "rbHealty";
+            this.rbHealty.Size = new System.Drawing.Size(61, 17);
+            this.rbHealty.TabIndex = 1;
+            this.rbHealty.TabStop = true;
+            this.rbHealty.Text = "Healthy";
+            this.rbHealty.UseVisualStyleBackColor = true;
+            // 
+            // rbPostres
+            // 
+            this.rbPostres.AutoSize = true;
+            this.rbPostres.Location = new System.Drawing.Point(17, 23);
+            this.rbPostres.Name = "rbPostres";
+            this.rbPostres.Size = new System.Drawing.Size(60, 17);
+            this.rbPostres.TabIndex = 0;
+            this.rbPostres.TabStop = true;
+            this.rbPostres.Text = "Postres";
+            this.rbPostres.UseVisualStyleBackColor = true;
+            this.rbPostres.CheckedChanged += new System.EventHandler(this.rbPostres_CheckedChanged);
             // 
             // Showrecipes
             // 
@@ -363,11 +418,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Showrecipes";
-            this.Size = new System.Drawing.Size(1061, 612);
+            this.Size = new System.Drawing.Size(1010, 578);
             this.Load += new System.EventHandler(this.Showrecipes_Load_1);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -376,16 +432,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DGDatos)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -410,7 +468,6 @@
         private System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.VScrollBar vScrollBar1;
-        private System.Windows.Forms.Button btn1;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.TextBox lblSearch;
         private System.Windows.Forms.Panel panel3;
@@ -420,5 +477,10 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.RadioButton rbEntradas;
+        private System.Windows.Forms.RadioButton rb3Leches;
+        private System.Windows.Forms.RadioButton rbHealty;
+        private System.Windows.Forms.RadioButton rbPostres;
     }
 }

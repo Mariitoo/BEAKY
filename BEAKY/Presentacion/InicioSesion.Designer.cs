@@ -84,7 +84,7 @@
             this.button2.Location = new System.Drawing.Point(215, 134);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(196, 36);
-            this.button2.TabIndex = 5;
+            this.button2.TabIndex = 3;
             this.button2.Text = "Registrarse";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -97,7 +97,7 @@
             this.tbUserName.Location = new System.Drawing.Point(40, 30);
             this.tbUserName.Name = "tbUserName";
             this.tbUserName.Size = new System.Drawing.Size(351, 28);
-            this.tbUserName.TabIndex = 1;
+            this.tbUserName.TabIndex = 0;
             this.tbUserName.Text = "Username";
             // 
             // button1
@@ -107,7 +107,7 @@
             this.button1.Location = new System.Drawing.Point(13, 134);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(196, 36);
-            this.button1.TabIndex = 4;
+            this.button1.TabIndex = 2;
             this.button1.Text = "Ingresar";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -120,7 +120,7 @@
             this.tbPasswd.Location = new System.Drawing.Point(40, 83);
             this.tbPasswd.Name = "tbPasswd";
             this.tbPasswd.Size = new System.Drawing.Size(351, 28);
-            this.tbPasswd.TabIndex = 0;
+            this.tbPasswd.TabIndex = 1;
             this.tbPasswd.Text = "Password";
             // 
             // pictureBox1

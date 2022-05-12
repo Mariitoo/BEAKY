@@ -58,7 +58,6 @@
             this.txtTips = new System.Windows.Forms.TextBox();
             this.btnSubir = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.txtIDUs = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -115,7 +114,6 @@
             // panelinfoRece
             // 
             this.panelinfoRece.BackColor = System.Drawing.Color.White;
-            this.panelinfoRece.Controls.Add(this.txtIDUs);
             this.panelinfoRece.Controls.Add(this.DGCat);
             this.panelinfoRece.Controls.Add(this.btnaggCat);
             this.panelinfoRece.Controls.Add(this.txtCat);
@@ -131,15 +129,18 @@
             this.panelinfoRece.Name = "panelinfoRece";
             this.panelinfoRece.Size = new System.Drawing.Size(1064, 338);
             this.panelinfoRece.TabIndex = 5;
+            this.panelinfoRece.Paint += new System.Windows.Forms.PaintEventHandler(this.panelinfoRece_Paint);
             // 
             // DGCat
             // 
             this.DGCat.AllowUserToAddRows = false;
             this.DGCat.AllowUserToDeleteRows = false;
+            this.DGCat.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.DGCat.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGCat.Location = new System.Drawing.Point(585, 183);
+            this.DGCat.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.DGCat.Location = new System.Drawing.Point(899, 109);
             this.DGCat.Name = "DGCat";
-            this.DGCat.Size = new System.Drawing.Size(293, 120);
+            this.DGCat.Size = new System.Drawing.Size(156, 123);
             this.DGCat.TabIndex = 20;
             this.DGCat.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGCat_CellContentClick);
             // 
@@ -421,14 +422,6 @@
             this.panel2.TabIndex = 6;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // txtIDUs
-            // 
-            this.txtIDUs.Location = new System.Drawing.Point(41, 25);
-            this.txtIDUs.Name = "txtIDUs";
-            this.txtIDUs.Size = new System.Drawing.Size(71, 20);
-            this.txtIDUs.TabIndex = 16;
-            this.txtIDUs.TextChanged += new System.EventHandler(this.txtIDUs_TextChanged);
-            // 
             // SubirReceta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -488,6 +481,5 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnaggCat;
         private System.Windows.Forms.DataGridView DGCat;
-        private System.Windows.Forms.TextBox txtIDUs;
     }
 }
