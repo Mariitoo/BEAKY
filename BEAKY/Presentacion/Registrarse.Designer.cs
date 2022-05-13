@@ -30,11 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Registrarse));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox7 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnBorrar = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -42,15 +40,14 @@
             this.btnSignup = new System.Windows.Forms.Button();
             this.tbLastName3 = new System.Windows.Forms.TextBox();
             this.tbPasswd5 = new System.Windows.Forms.TextBox();
-            this.textEmail4 = new System.Windows.Forms.TextBox();
             this.tbUserName1 = new System.Windows.Forms.TextBox();
             this.tbName2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -63,24 +60,11 @@
             this.panel1.Size = new System.Drawing.Size(1024, 669);
             this.panel1.TabIndex = 1;
             // 
-            // textBox7
-            // 
-            this.textBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.textBox7.Font = new System.Drawing.Font("MV Boli", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(-17, 679);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(1066, 28);
-            this.textBox7.TabIndex = 5;
-            this.textBox7.Text = " BEAKY  the best place to store your recipes!";
-            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.btnBorrar);
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
@@ -88,7 +72,6 @@
             this.panel2.Controls.Add(this.btnSignup);
             this.panel2.Controls.Add(this.tbLastName3);
             this.panel2.Controls.Add(this.tbPasswd5);
-            this.panel2.Controls.Add(this.textEmail4);
             this.panel2.Controls.Add(this.tbUserName1);
             this.panel2.Controls.Add(this.tbName2);
             this.panel2.Controls.Add(this.textBox1);
@@ -97,19 +80,15 @@
             this.panel2.Size = new System.Drawing.Size(690, 539);
             this.panel2.TabIndex = 6;
             // 
-            // btnBorrar
+            // pictureBox1
             // 
-            this.btnBorrar.BackColor = System.Drawing.Color.MistyRose;
-            this.btnBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnBorrar.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBorrar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnBorrar.Location = new System.Drawing.Point(395, 457);
-            this.btnBorrar.Name = "btnBorrar";
-            this.btnBorrar.Size = new System.Drawing.Size(168, 57);
-            this.btnBorrar.TabIndex = 15;
-            this.btnBorrar.Text = "Borrar";
-            this.btnBorrar.UseVisualStyleBackColor = false;
-            this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
+            this.pictureBox1.BackColor = System.Drawing.Color.MistyRose;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(442, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(39, 41);
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
             // 
             // label5
             // 
@@ -117,23 +96,11 @@
             this.label5.BackColor = System.Drawing.Color.MistyRose;
             this.label5.Font = new System.Drawing.Font("Modern No. 20", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label5.Location = new System.Drawing.Point(27, 386);
+            this.label5.Location = new System.Drawing.Point(34, 322);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(138, 31);
             this.label5.TabIndex = 14;
             this.label5.Text = "Password :";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.MistyRose;
-            this.label4.Font = new System.Drawing.Font("Modern No. 20", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label4.Location = new System.Drawing.Point(27, 316);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(201, 31);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "Email Address :";
             // 
             // label1
             // 
@@ -187,7 +154,7 @@
             this.btnSignup.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSignup.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSignup.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnSignup.Location = new System.Drawing.Point(129, 457);
+            this.btnSignup.Location = new System.Drawing.Point(268, 457);
             this.btnSignup.Name = "btnSignup";
             this.btnSignup.Size = new System.Drawing.Size(168, 57);
             this.btnSignup.TabIndex = 6;
@@ -211,21 +178,10 @@
             this.tbPasswd5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbPasswd5.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbPasswd5.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.tbPasswd5.Location = new System.Drawing.Point(252, 383);
+            this.tbPasswd5.Location = new System.Drawing.Point(252, 323);
             this.tbPasswd5.Name = "tbPasswd5";
             this.tbPasswd5.Size = new System.Drawing.Size(417, 30);
             this.tbPasswd5.TabIndex = 4;
-            // 
-            // textEmail4
-            // 
-            this.textEmail4.BackColor = System.Drawing.Color.Ivory;
-            this.textEmail4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textEmail4.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textEmail4.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.textEmail4.Location = new System.Drawing.Point(252, 313);
-            this.textEmail4.Name = "textEmail4";
-            this.textEmail4.Size = new System.Drawing.Size(417, 30);
-            this.textEmail4.TabIndex = 3;
             // 
             // tbUserName1
             // 
@@ -261,15 +217,16 @@
             this.textBox1.Text = "SIGN UP";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // pictureBox1
+            // textBox7
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.MistyRose;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(442, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(39, 41);
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
+            this.textBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.textBox7.Font = new System.Drawing.Font("MV Boli", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox7.Location = new System.Drawing.Point(-17, 679);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(1066, 28);
+            this.textBox7.TabIndex = 5;
+            this.textBox7.Text = " BEAKY  the best place to store your recipes!";
+            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Registrarse
             // 
@@ -283,8 +240,8 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -294,9 +251,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnBorrar;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
@@ -304,7 +259,6 @@
         private System.Windows.Forms.Button btnSignup;
         private System.Windows.Forms.TextBox tbLastName3;
         private System.Windows.Forms.TextBox tbPasswd5;
-        private System.Windows.Forms.TextBox textEmail4;
         private System.Windows.Forms.TextBox tbUserName1;
         private System.Windows.Forms.TextBox tbName2;
         private System.Windows.Forms.TextBox textBox1;

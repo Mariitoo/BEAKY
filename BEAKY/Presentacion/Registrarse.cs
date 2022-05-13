@@ -50,10 +50,6 @@ namespace BEAKY.Presentacion
             this.Hide();
         }
 
-        private void btnBorrar_Click(object sender, EventArgs e)
-        {
-            LimpiarTexto limpiarTexto = new LimpiarTexto();
-            limpiarTexto.BorrarCampos(this);
-        }
+     
     }
 }

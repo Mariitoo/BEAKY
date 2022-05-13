@@ -61,6 +61,7 @@
             this.rb3Leches = new System.Windows.Forms.RadioButton();
             this.rbHealty = new System.Windows.Forms.RadioButton();
             this.rbPostres = new System.Windows.Forms.RadioButton();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -80,6 +81,7 @@
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel1.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.pictureBox5);
             this.panel1.Controls.Add(this.lblSearch);
             this.panel1.Controls.Add(this.vScrollBar1);
@@ -94,7 +96,7 @@
             // pictureBox5
             // 
             this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
-            this.pictureBox5.Location = new System.Drawing.Point(747, 5);
+            this.pictureBox5.Location = new System.Drawing.Point(689, 3);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(44, 41);
             this.pictureBox5.TabIndex = 5;
@@ -108,7 +110,6 @@
             this.lblSearch.Name = "lblSearch";
             this.lblSearch.Size = new System.Drawing.Size(213, 22);
             this.lblSearch.TabIndex = 4;
-            this.lblSearch.Text = "Busca tus recetas...";
             this.lblSearch.TextChanged += new System.EventHandler(this.lblSearch_TextChanged);
             // 
             // vScrollBar1
@@ -121,7 +122,7 @@
             // pictureBox2
             // 
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.Location = new System.Drawing.Point(315, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(97, 4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(42, 42);
             this.pictureBox2.TabIndex = 2;
@@ -130,7 +131,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(633, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(296, 5);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(39, 41);
             this.pictureBox1.TabIndex = 1;
@@ -141,7 +142,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Script MT Bold", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(432, 10);
+            this.label1.Location = new System.Drawing.Point(168, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(106, 35);
             this.label1.TabIndex = 0;
@@ -229,7 +230,7 @@
             // 
             this.lblID.AutoSize = true;
             this.lblID.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblID.Location = new System.Drawing.Point(37, 89);
+            this.lblID.Location = new System.Drawing.Point(66, 25);
             this.lblID.Name = "lblID";
             this.lblID.Size = new System.Drawing.Size(106, 18);
             this.lblID.TabIndex = 16;
@@ -279,7 +280,7 @@
             // 
             this.lblDescription.AutoSize = true;
             this.lblDescription.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescription.Location = new System.Drawing.Point(229, 106);
+            this.lblDescription.Location = new System.Drawing.Point(222, 114);
             this.lblDescription.Name = "lblDescription";
             this.lblDescription.Size = new System.Drawing.Size(37, 15);
             this.lblDescription.TabIndex = 5;
@@ -290,7 +291,7 @@
             // 
             this.lblDescriptionTit.AutoSize = true;
             this.lblDescriptionTit.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescriptionTit.Location = new System.Drawing.Point(449, 68);
+            this.lblDescriptionTit.Location = new System.Drawing.Point(419, 71);
             this.lblDescriptionTit.Name = "lblDescriptionTit";
             this.lblDescriptionTit.Size = new System.Drawing.Size(139, 27);
             this.lblDescriptionTit.TabIndex = 4;
@@ -319,7 +320,7 @@
             // 
             this.lblUsername.AutoSize = true;
             this.lblUsername.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsername.Location = new System.Drawing.Point(66, 43);
+            this.lblUsername.Location = new System.Drawing.Point(66, 3);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(147, 18);
             this.lblUsername.TabIndex = 1;
@@ -418,6 +419,16 @@
             this.rbPostres.UseVisualStyleBackColor = true;
             this.rbPostres.CheckedChanged += new System.EventHandler(this.rbPostres_CheckedChanged);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(739, 11);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(72, 21);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Search :";
+            // 
             // Showrecipes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -488,5 +499,6 @@
         private System.Windows.Forms.RadioButton rb3Leches;
         private System.Windows.Forms.RadioButton rbHealty;
         private System.Windows.Forms.RadioButton rbPostres;
+        private System.Windows.Forms.Label label2;
     }
 }
