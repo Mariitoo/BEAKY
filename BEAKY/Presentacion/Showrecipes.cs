@@ -142,5 +142,37 @@ namespace BEAKY.Presentacion
             adaptador.Fill(ds);
             DGDatos.DataSource = ds.Tables[0];
         }
+
+        private void rbEntradas_CheckedChanged(object sender, EventArgs e)
+        {
+            SqlDataAdapter adaptador = new SqlDataAdapter($"SELECT * FROM receta WHERE categoria = 'Entradas'", CONEXION.conectar);
+            DataSet ds = new DataSet();
+            adaptador.Fill(ds);
+            DGDatos.DataSource = ds.Tables[0];
+        }
+
+        private void rbHealty_CheckedChanged(object sender, EventArgs e)
+        {
+            SqlDataAdapter adaptador = new SqlDataAdapter($"SELECT * FROM receta WHERE categoria = 'TACOS'", CONEXION.conectar);
+            DataSet ds = new DataSet();
+            adaptador.Fill(ds);
+            DGDatos.DataSource = ds.Tables[0];
+        }
+
+        private void rb3Leches_CheckedChanged(object sender, EventArgs e)
+        {
+            SqlDataAdapter adaptador = new SqlDataAdapter($"SELECT * FROM receta WHERE categoria = '3 LECHES'", CONEXION.conectar);
+            DataSet ds = new DataSet();
+            adaptador.Fill(ds);
+            DGDatos.DataSource = ds.Tables[0];
+        }
+
+        private void rbPescado_CheckedChanged(object sender, EventArgs e)
+        {
+            SqlDataAdapter adaptador = new SqlDataAdapter($"SELECT * FROM receta WHERE categoria = 'PESCADO'", CONEXION.conectar);
+            DataSet ds = new DataSet();
+            adaptador.Fill(ds);
+            DGDatos.DataSource = ds.Tables[0];
+        }
     }
 }

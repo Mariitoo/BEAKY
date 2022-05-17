@@ -24,7 +24,7 @@ namespace BEAKY.Datos
                 cmd.Parameters.AddWithValue("@descripcion", parametros.descripcion);
                 cmd.Parameters.AddWithValue("@ingrediente", parametros.ingrediente);
                 cmd.Parameters.AddWithValue("@preparacion", parametros.preparacion);
-                cmd.Parameters.AddWithValue("@id_categoria", parametros.id_categoria);
+                //cmd.Parameters.AddWithValue("@id_categoria", parametros.id_categoria);
                 cmd.Parameters.AddWithValue("@categoria", parametros.categoria);
                 cmd.ExecuteNonQuery();
                 return true;

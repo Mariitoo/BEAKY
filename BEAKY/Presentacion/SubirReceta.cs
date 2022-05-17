@@ -236,11 +236,80 @@ namespace BEAKY.Presentacion
 
         private void panelinfoRece_Paint(object sender, PaintEventArgs e)
         {
+           
+        }
+
+        private void btnSubir_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                CONEXION.abrir();
+                //AQUÍ SE EJECUTA EL SCRIPT PARA HACER INSERCIONES EN LA BD
+                String sql = " ";
+                sql = sql + "INSERT INTO [dbo].[receta] " + "\n";
+                sql = sql + "           ([nombre] " + "\n";
+                sql = sql + "           ,[tiempo] " + "\n";
+                sql = sql + "           ,[descripcion] " + "\n";
+                sql = sql + "           ,[ingrediente] " + "\n";
+                sql = sql + "           ,[tips] " + "\n";
+                sql = sql + "           ,[preparacion] " + "\n";
+                sql = sql + "           ,[categoria])" + "\n";
+
+                sql = sql + "     VALUES " + "\n";
+                sql = sql + "           (@nombre " + "\n";
+                sql = sql + "           ,@tiempo " + "\n";
+                sql = sql + "           ,@descripcion " + "\n";
+                sql = sql + "           ,@ingrediente " + "\n";
+                sql = sql + "           ,@tips " + "\n";
+                sql = sql + "           ,@preparacion" + "\n";
+                sql = sql + "           ,@categoria)" + "\n";
+
+
+                //Aquí se lleva todo lo que esté contenido en los campos en los textbox
+                SqlCommand prueba = new SqlCommand(sql, CONEXION.conectar);
+                prueba.Parameters.AddWithValue("@nombre", txtNomRec.Text);
+                prueba.Parameters.AddWithValue("@tiempo", txtTiempo.Text);
+                prueba.Parameters.AddWithValue("@descripcion", txtIDesc.Text);
+                prueba.Parameters.AddWithValue("@ingrediente", txtIngre.Text);
+                prueba.Parameters.AddWithValue("@tips", txtTips.Text);
+                prueba.Parameters.AddWithValue("@preparacion", txtPrepara.Text);
+                prueba.Parameters.AddWithValue("@categoria", txtCat.Text);
+                prueba.ExecuteNonQuery();
+                //InsertarReceta();
+                Limpiar();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.StackTrace);
+
+
+            }
+            finally
+            {
+                CONEXION.cerrar();
+            }
+
+        
+    }
+
+        private void SubirReceta_Load(object sender, EventArgs e)
+        {
             string consultar = $"select categoria from categoria";
             SqlDataAdapter adaptador = new SqlDataAdapter(consultar, CONEXION.conectar);
             DataTable dt = new DataTable();
             adaptador.Fill(dt);
             DGCat.DataSource = dt;
+        }
+
+        private void txtCat_TextChanged_1(object sender, EventArgs e)
+        {
+            buscarCat();
+        }
+
+        private void btnaggCat_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

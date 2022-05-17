@@ -43,7 +43,6 @@
             this.lblIngrediente = new System.Windows.Forms.Label();
             this.txtIngre = new System.Windows.Forms.TextBox();
             this.DGCat = new System.Windows.Forms.DataGridView();
-            this.btnaggCat = new System.Windows.Forms.Button();
             this.txtCat = new System.Windows.Forms.TextBox();
             this.panelCat = new System.Windows.Forms.Panel();
             this.txtCatG = new System.Windows.Forms.TextBox();
@@ -123,6 +122,7 @@
             this.btnSubir.TabIndex = 51;
             this.btnSubir.Text = "Subir receta";
             this.btnSubir.UseVisualStyleBackColor = false;
+            this.btnSubir.Click += new System.EventHandler(this.btnSubir_Click_1);
             // 
             // txtTips
             // 
@@ -236,21 +236,6 @@
             this.DGCat.Size = new System.Drawing.Size(156, 123);
             this.DGCat.TabIndex = 41;
             // 
-            // btnaggCat
-            // 
-            this.btnaggCat.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnaggCat.BackColor = System.Drawing.Color.MistyRose;
-            this.btnaggCat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnaggCat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnaggCat.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnaggCat.ForeColor = System.Drawing.Color.Black;
-            this.btnaggCat.Location = new System.Drawing.Point(901, 297);
-            this.btnaggCat.Name = "btnaggCat";
-            this.btnaggCat.Size = new System.Drawing.Size(153, 35);
-            this.btnaggCat.TabIndex = 39;
-            this.btnaggCat.Text = "Agregar Categoria";
-            this.btnaggCat.UseVisualStyleBackColor = false;
-            // 
             // txtCat
             // 
             this.txtCat.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -258,6 +243,7 @@
             this.txtCat.Name = "txtCat";
             this.txtCat.Size = new System.Drawing.Size(104, 20);
             this.txtCat.TabIndex = 40;
+            this.txtCat.TextChanged += new System.EventHandler(this.txtCat_TextChanged_1);
             // 
             // panelCat
             // 
@@ -416,7 +402,6 @@
             this.Controls.Add(this.lblIngrediente);
             this.Controls.Add(this.txtIngre);
             this.Controls.Add(this.DGCat);
-            this.Controls.Add(this.btnaggCat);
             this.Controls.Add(this.txtCat);
             this.Controls.Add(this.panelCat);
             this.Controls.Add(this.label2);
@@ -429,6 +414,7 @@
             this.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Name = "SubirReceta";
             this.Size = new System.Drawing.Size(1064, 705);
+            this.Load += new System.EventHandler(this.SubirReceta_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -459,7 +445,6 @@
         private System.Windows.Forms.Label lblIngrediente;
         private System.Windows.Forms.TextBox txtIngre;
         private System.Windows.Forms.DataGridView DGCat;
-        private System.Windows.Forms.Button btnaggCat;
         private System.Windows.Forms.TextBox txtCat;
         private System.Windows.Forms.Panel panelCat;
         private System.Windows.Forms.TextBox txtCatG;

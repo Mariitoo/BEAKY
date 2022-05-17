@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Showrecipes));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.lblSearch = new System.Windows.Forms.TextBox();
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
@@ -61,7 +62,7 @@
             this.rb3Leches = new System.Windows.Forms.RadioButton();
             this.rbHealty = new System.Windows.Forms.RadioButton();
             this.rbPostres = new System.Windows.Forms.RadioButton();
-            this.label2 = new System.Windows.Forms.Label();
+            this.rbPescado = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -88,10 +89,20 @@
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(82, 0);
+            this.panel1.Location = new System.Drawing.Point(87, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1044, 53);
             this.panel1.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(739, 11);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(72, 21);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Search :";
             // 
             // pictureBox5
             // 
@@ -166,7 +177,7 @@
             this.panel2.Controls.Add(this.pictureBox4);
             this.panel2.Controls.Add(this.lblUsername);
             this.panel2.Controls.Add(this.pictureBox3);
-            this.panel2.Location = new System.Drawing.Point(97, 82);
+            this.panel2.Location = new System.Drawing.Point(102, 82);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1027, 444);
             this.panel2.TabIndex = 1;
@@ -341,7 +352,7 @@
             this.panel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel3.AutoScroll = true;
             this.panel3.Controls.Add(this.DGDatos);
-            this.panel3.Location = new System.Drawing.Point(97, 584);
+            this.panel3.Location = new System.Drawing.Point(102, 584);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(788, 147);
             this.panel3.TabIndex = 13;
@@ -362,14 +373,15 @@
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.groupBox1.BackColor = System.Drawing.Color.Bisque;
+            this.groupBox1.Controls.Add(this.rbPescado);
             this.groupBox1.Controls.Add(this.rbEntradas);
             this.groupBox1.Controls.Add(this.rb3Leches);
             this.groupBox1.Controls.Add(this.rbHealty);
             this.groupBox1.Controls.Add(this.rbPostres);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(912, 584);
+            this.groupBox1.Location = new System.Drawing.Point(917, 584);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(186, 144);
+            this.groupBox1.Size = new System.Drawing.Size(186, 185);
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Categorias :";
@@ -384,6 +396,7 @@
             this.rbEntradas.TabStop = true;
             this.rbEntradas.Text = "Entradas";
             this.rbEntradas.UseVisualStyleBackColor = true;
+            this.rbEntradas.CheckedChanged += new System.EventHandler(this.rbEntradas_CheckedChanged);
             // 
             // rb3Leches
             // 
@@ -395,17 +408,19 @@
             this.rb3Leches.TabStop = true;
             this.rb3Leches.Text = "3 Leches";
             this.rb3Leches.UseVisualStyleBackColor = true;
+            this.rb3Leches.CheckedChanged += new System.EventHandler(this.rb3Leches_CheckedChanged);
             // 
             // rbHealty
             // 
             this.rbHealty.AutoSize = true;
             this.rbHealty.Location = new System.Drawing.Point(17, 49);
             this.rbHealty.Name = "rbHealty";
-            this.rbHealty.Size = new System.Drawing.Size(71, 20);
+            this.rbHealty.Size = new System.Drawing.Size(64, 20);
             this.rbHealty.TabIndex = 1;
             this.rbHealty.TabStop = true;
-            this.rbHealty.Text = "Healthy";
+            this.rbHealty.Text = "Tacos";
             this.rbHealty.UseVisualStyleBackColor = true;
+            this.rbHealty.CheckedChanged += new System.EventHandler(this.rbHealty_CheckedChanged);
             // 
             // rbPostres
             // 
@@ -419,15 +434,17 @@
             this.rbPostres.UseVisualStyleBackColor = true;
             this.rbPostres.CheckedChanged += new System.EventHandler(this.rbPostres_CheckedChanged);
             // 
-            // label2
+            // rbPescado
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(739, 11);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 21);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Search :";
+            this.rbPescado.AutoSize = true;
+            this.rbPescado.Location = new System.Drawing.Point(17, 121);
+            this.rbPescado.Name = "rbPescado";
+            this.rbPescado.Size = new System.Drawing.Size(80, 20);
+            this.rbPescado.TabIndex = 4;
+            this.rbPescado.TabStop = true;
+            this.rbPescado.Text = "Pescado";
+            this.rbPescado.UseVisualStyleBackColor = true;
+            this.rbPescado.CheckedChanged += new System.EventHandler(this.rbPescado_CheckedChanged);
             // 
             // Showrecipes
             // 
@@ -440,7 +457,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Showrecipes";
-            this.Size = new System.Drawing.Size(1208, 758);
+            this.Size = new System.Drawing.Size(1219, 800);
             this.Load += new System.EventHandler(this.Showrecipes_Load_1);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -500,5 +517,6 @@
         private System.Windows.Forms.RadioButton rbHealty;
         private System.Windows.Forms.RadioButton rbPostres;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.RadioButton rbPescado;
     }
 }

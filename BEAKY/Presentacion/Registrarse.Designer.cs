@@ -160,6 +160,7 @@
             this.btnSignup.TabIndex = 6;
             this.btnSignup.Text = "Registrarse";
             this.btnSignup.UseVisualStyleBackColor = false;
+            this.btnSignup.Click += new System.EventHandler(this.btnSignup_Click_1);
             // 
             // tbLastName3
             // 
